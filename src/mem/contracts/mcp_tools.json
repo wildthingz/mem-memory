@@ -1,0 +1,551 @@
+{
+  "contract_version": 1,
+  "tools": [
+    {
+      "description": "Search memories and notes. Returns a header plus rows 'id \u00b7 type \u00b7 date \u00b7 title \u00b7 about \u00b7 p' (plus 'dates: \u2026' before p with ingest.resolve_dates on), or an abstention line.",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "about": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "as_of": {
+            "type": "string"
+          },
+          "budget": {
+            "default": 600,
+            "type": "integer"
+          },
+          "include_history": {
+            "default": false,
+            "type": "boolean"
+          },
+          "kinds": {
+            "items": {
+              "enum": [
+                "memory",
+                "note"
+              ]
+            },
+            "type": "array"
+          },
+          "limit": {
+            "default": 8,
+            "type": "integer"
+          },
+          "page": {
+            "maxLength": 32,
+            "type": "string"
+          },
+          "query": {
+            "type": "string"
+          },
+          "since": {
+            "type": "string"
+          },
+          "type": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "until": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object"
+      },
+      "name": "recall",
+      "structuredContent": {
+        "additionalProperties": false,
+        "properties": {
+          "abstained": {
+            "type": "boolean"
+          },
+          "checked": {
+            "type": "integer"
+          },
+          "filters_dropped": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "hidden": {
+            "description": "Rows the read-time conflict guard left out (ADR 0018): each still exists; get it by id. The daily review offers a real supersede.",
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "possibly_superseded_by": {
+                  "type": "string"
+                },
+                "score": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "id",
+                "possibly_superseded_by",
+                "score"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "rows": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "about": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "date": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "dates": {
+                  "description": "Only with ingest.resolve_dates on (ADR 0021): the resolved relative dates, absolute first, e.g. '2023-05-27 (last Saturday)'; the same text as the row's 'dates:' segment. Absent when no date resolved.",
+                  "type": "string"
+                },
+                "flags": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "kind": {
+                  "type": "string"
+                },
+                "p": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "title": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "kind",
+                "type",
+                "date",
+                "title",
+                "about",
+                "p",
+                "flags"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "rows",
+          "abstained",
+          "checked",
+          "filters_dropped"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "description": "Fetch full text by id (m412, e45, n67, c812) or continuation token (c812@1840, e45@edges:10).",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "ids": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 10,
+            "type": "array"
+          },
+          "max_tokens": {
+            "default": 2000,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "ids"
+        ],
+        "type": "object"
+      },
+      "name": "get",
+      "structuredContent": {
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "continuation": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "found": {
+                  "type": "boolean"
+                },
+                "header": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "found"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "items"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "description": "Save a memory. about needs at least one subject: name, #id, 'mention \u2192 #id' or 'new:type:Name'. Secrets are rejected; text that instructs an AI is quarantined.",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "about": {
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "as_of": {
+            "type": "string"
+          },
+          "distinct_new": {
+            "default": false,
+            "description": "Only after a needs_choice listed an entity of another type under a new: name: true means each new: name is a different thing and is created anyway (an existing one of the same type is still reused).",
+            "type": "boolean"
+          },
+          "facts": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 5,
+            "type": "array"
+          },
+          "pin": {
+            "default": false,
+            "type": "boolean"
+          },
+          "source": {
+            "description": "Where the text came from. A URL or tool:<name> (fetched page, file, command output, another MCP server) marks it tool-sourced: it ranks below first-hand memories and is quarantined if it holds instructions.",
+            "type": "string"
+          },
+          "stated_by_user": {
+            "default": false,
+            "type": "boolean"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "supersedes": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "type",
+          "about"
+        ],
+        "type": "object"
+      },
+      "name": "remember",
+      "structuredContent": {
+        "additionalProperties": false,
+        "properties": {
+          "candidates": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "possible_conflicts": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "hint": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "row": {
+                  "type": "string"
+                },
+                "score": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "id",
+                "row",
+                "score",
+                "hint"
+              ],
+              "type": "object"
+            },
+            "maxItems": 5,
+            "type": "array"
+          },
+          "row": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "enum": [
+              "saved",
+              "exists",
+              "needs_choice",
+              "quarantined"
+            ]
+          },
+          "subjects": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "status",
+          "id",
+          "row",
+          "subjects",
+          "possible_conflicts",
+          "candidates"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "description": "Create or remove a typed edge between two nodes.",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "dst": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          },
+          "rel": {
+            "type": "string"
+          },
+          "remove": {
+            "default": false,
+            "type": "boolean"
+          },
+          "src": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "src",
+          "rel",
+          "dst"
+        ],
+        "type": "object"
+      },
+      "name": "link",
+      "structuredContent": {
+        "additionalProperties": false,
+        "properties": {
+          "edge": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "error": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ok": {
+            "type": "boolean"
+          },
+          "side_effects": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "ok",
+          "edge",
+          "side_effects",
+          "error"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "description": "List or search entities and tags: 'e45 \u00b7 person \u00b7 Ana Silva (aka Ana, AS) \u00b7 14 memories \u00b7 3 notes'.",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "limit": {
+            "default": 20,
+            "type": "integer"
+          },
+          "query": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "subjects",
+      "structuredContent": {
+        "additionalProperties": false,
+        "properties": {
+          "subjects": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "aliases": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "memories": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "notes": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "type",
+                "name",
+                "aliases",
+                "memories",
+                "notes"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "subjects"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "description": "Retract a memory: it stops being recalled, nothing is deleted. Memories only; imported notes are edited in the vault.",
+      "inputSchema": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "reason"
+        ],
+        "type": "object"
+      },
+      "name": "forget",
+      "structuredContent": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "ok": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ok",
+          "id",
+          "status"
+        ],
+        "type": "object"
+      }
+    }
+  ]
+}

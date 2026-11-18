@@ -1,0 +1,3566 @@
+[
+ {
+  "question_id": "0000ab0",
+  "question_type": "knowledge-update",
+  "question": "What is the amber value in my amber project?",
+  "answer": "amber-100",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s0_0",
+   "s0_1",
+   "s0_2",
+   "s0_3",
+   "s0_4",
+   "s0_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about bicycle and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and holiday."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about bicycle and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and pasta."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on camera and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about garden and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and budget."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My amber project update: the amber value is amber-100.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your amber value is amber-100."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about amber next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about garden and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and budget."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and coffee."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on camera and holiday."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about budget and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and yoga."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and movie."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about paint and laptop today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and recipe."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s0_2"
+  ]
+ },
+ {
+  "question_id": "0001ab1",
+  "question_type": "knowledge-update",
+  "question": "What is the basalt value in my basalt project?",
+  "answer": "basalt-101",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s1_0",
+   "s1_1",
+   "s1_2",
+   "s1_3",
+   "s1_4",
+   "s1_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "assistant",
+     "content": "Welcome back."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about bicycle and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and holiday."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about yoga and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and yoga."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and laptop."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about podcast and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about yoga and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and holiday."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My basalt project update: the basalt value is basalt-101.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your basalt value is basalt-101."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about basalt next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about paint and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and ticket."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and train."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about train and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and holiday."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and laptop."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and train."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about printer and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and budget."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and ticket."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s1_2"
+  ]
+ },
+ {
+  "question_id": "0002ab2",
+  "question_type": "knowledge-update",
+  "question": "What is the cobalt value in my cobalt project?",
+  "answer": "cobalt-102",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s2_0",
+   "s2_1",
+   "s2_2",
+   "s2_3",
+   "s2_4",
+   "s2_5",
+   "s2_0"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15",
+   "2023/05/16 (Wed) 06:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on camera and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and laptop."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and camera."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about printer and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and budget."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My cobalt project update: the cobalt value is cobalt-102.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your cobalt value is cobalt-102."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about cobalt next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about paint and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and ticket."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about budget and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and train."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and laptop."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and podcast."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and movie."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and paint."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on camera and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and laptop."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and camera."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s2_2"
+  ]
+ },
+ {
+  "question_id": "0003ab3",
+  "question_type": "temporal-reasoning",
+  "question": "What is the dune value in my dune project?",
+  "answer": "dune-103",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s3_0",
+   "s3_1",
+   "s3_2",
+   "s3_3",
+   "s3_4",
+   "s3_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and train."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and movie."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and soccer."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about movie and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about yoga and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and holiday."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and paint."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My dune project update: the dune value is dune-103.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your dune value is dune-103."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about dune next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and podcast."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and yoga."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and holiday today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on camera and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and coffee."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about printer and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and invoice."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and paint."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about garden and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and soccer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and printer."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s3_2"
+  ]
+ },
+ {
+  "question_id": "0004ab4",
+  "question_type": "temporal-reasoning",
+  "question": "What is the ember value in my ember project?",
+  "answer": "ember-104",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s4_0",
+   "s4_1",
+   "s4_2",
+   "s4_3",
+   "s4_4",
+   "s4_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and coffee."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and paint."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about printer and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and podcast."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about podcast and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and paint."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and movie."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and coffee."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My ember project update: the ember value is ember-104.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your ember value is ember-104."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about ember next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about garden and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about podcast and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on invoice and ticket."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and yoga."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and podcast."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about train and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and ticket."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and recipe."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s4_2"
+  ]
+ },
+ {
+  "question_id": "0005ab5",
+  "question_type": "temporal-reasoning",
+  "question": "What is the fjord value in my fjord project?",
+  "answer": "fjord-105",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s5_0",
+   "s5_1",
+   "s5_2",
+   "s5_3",
+   "s5_4",
+   "s5_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and coffee."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about garden and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and garden."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about garden and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and holiday today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and movie."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and laptop today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and garden."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My fjord project update: the fjord value is fjord-105.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your fjord value is fjord-105."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about fjord next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and movie."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and podcast."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about garden and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and printer."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about bicycle and holiday today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and coffee."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about printer and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about printer and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and yoga."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on invoice and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and bicycle."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s5_2"
+  ]
+ },
+ {
+  "question_id": "0006ab6",
+  "question_type": "multi-session",
+  "question": "What is the garnet value in my garnet project?",
+  "answer": "garnet-106",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s6_0",
+   "s6_1",
+   "s6_2",
+   "s6_3",
+   "s6_4",
+   "s6_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and train."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about garden and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and holiday."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and budget."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about printer and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and camera."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on camera and movie."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My garnet project update: the garnet value is garnet-106.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your garnet value is garnet-106."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about garnet next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and movie."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about train and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and movie."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My garnet project update: the garnet value is garnet-106b.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your garnet value is garnet-106b."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about garnet next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about movie and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and paint."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and soccer."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s6_2",
+   "s6_4"
+  ]
+ },
+ {
+  "question_id": "0007ab7",
+  "question_type": "multi-session",
+  "question": "What is the harbor value in my harbor project?",
+  "answer": "harbor-107",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s7_0",
+   "s7_1",
+   "s7_2",
+   "s7_3",
+   "s7_4",
+   "s7_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and soccer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and ticket."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and holiday."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and laptop today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and pasta."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about budget and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and laptop today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and garden."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My harbor project update: the harbor value is harbor-107.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your harbor value is harbor-107."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about harbor next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about budget and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on invoice and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and paint."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and camera."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My harbor project update: the harbor value is harbor-107b.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your harbor value is harbor-107b."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about harbor next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about printer and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about podcast and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and laptop."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and printer."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s7_2",
+   "s7_4"
+  ]
+ },
+ {
+  "question_id": "0008ab8",
+  "question_type": "multi-session",
+  "question": "What is the indigo value in my indigo project?",
+  "answer": "indigo-108",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s8_0",
+   "s8_1",
+   "s8_2",
+   "s8_3",
+   "s8_4",
+   "s8_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on invoice and yoga."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and yoga."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on invoice and train."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about movie and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about podcast and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and camera."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My indigo project update: the indigo value is indigo-108.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your indigo value is indigo-108."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about indigo next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about garden and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and ticket."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about podcast and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and printer."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My indigo project update: the indigo value is indigo-108b.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your indigo value is indigo-108b."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about indigo next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and holiday."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about printer and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and podcast."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about garden and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and paint."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s8_2",
+   "s8_4"
+  ]
+ },
+ {
+  "question_id": "0009ab9",
+  "question_type": "single-session-user",
+  "question": "What is the juniper value in my juniper project?",
+  "answer": "juniper-109",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s9_0",
+   "s9_1",
+   "s9_2",
+   "s9_3",
+   "s9_4",
+   "s9_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about paint and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about budget and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and holiday."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and laptop today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and train."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and coffee."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and podcast."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My juniper project update: the juniper value is juniper-109.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your juniper value is juniper-109."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about juniper next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about movie and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and camera."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about bicycle and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and garden."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about yoga and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and coffee."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on invoice and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about train and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and laptop."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about budget and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and podcast."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and ticket."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about train and laptop today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and printer."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s9_2"
+  ]
+ },
+ {
+  "question_id": "000aab10",
+  "question_type": "single-session-user",
+  "question": "What is the kelp value in my kelp project?",
+  "answer": "kelp-110",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s10_0",
+   "s10_1",
+   "s10_2",
+   "s10_3",
+   "s10_4",
+   "s10_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about movie and soccer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and laptop."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and movie."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and laptop."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and movie."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and invoice."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My kelp project update: the kelp value is kelp-110.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your kelp value is kelp-110."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about kelp next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about train and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and paint."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and laptop today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and ticket."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about movie and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and laptop."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and soccer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and recipe."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about podcast and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and camera."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and soccer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and bicycle."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s10_2"
+  ]
+ },
+ {
+  "question_id": "000bab11",
+  "question_type": "single-session-user",
+  "question": "What is the lagoon value in my lagoon project?",
+  "answer": "lagoon-111",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s11_0",
+   "s11_1",
+   "s11_2",
+   "s11_3",
+   "s11_4",
+   "s11_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and ticket."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about printer and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and train."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about podcast and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about printer and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and laptop."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about budget and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and paint."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My lagoon project update: the lagoon value is lagoon-111.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your lagoon value is lagoon-111."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about lagoon next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and movie."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and soccer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and recipe."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about budget and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on invoice and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and garden."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about paint and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and yoga."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about train and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on invoice and garden."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s11_2"
+  ]
+ },
+ {
+  "question_id": "000cab12",
+  "question_type": "single-session-assistant",
+  "question": "What is the marble value in my marble project?",
+  "answer": "marble-112",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s12_0",
+   "s12_1",
+   "s12_2",
+   "s12_3",
+   "s12_4",
+   "s12_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about paint and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and coffee."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and camera."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about paint and holiday today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about train and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and podcast."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and pasta."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My marble project update: the marble value is marble-112.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your marble value is marble-112."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about marble next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and laptop today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and ticket."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about garden and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and holiday."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about budget and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on invoice and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and movie."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about podcast and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and holiday."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s12_2"
+  ]
+ },
+ {
+  "question_id": "000dab13",
+  "question_type": "single-session-assistant",
+  "question": "What is the nectar value in my nectar project?",
+  "answer": "nectar-113",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s13_0",
+   "s13_1",
+   "s13_2",
+   "s13_3",
+   "s13_4",
+   "s13_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about paint and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about podcast and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and printer."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and holiday."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and laptop today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and pasta."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My nectar project update: the nectar value is nectar-113.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your nectar value is nectar-113."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about nectar next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about paint and holiday today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and coffee."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about budget and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and holiday."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and coffee."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and paint."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about bicycle and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and invoice."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about train and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on invoice and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and camera."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and garden."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s13_2"
+  ]
+ },
+ {
+  "question_id": "000eab14",
+  "question_type": "single-session-assistant",
+  "question": "What is the onyx value in my onyx project?",
+  "answer": "onyx-114",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s14_0",
+   "s14_1",
+   "s14_2",
+   "s14_3",
+   "s14_4",
+   "s14_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about printer and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and budget."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and soccer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and printer."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about movie and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on camera and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about budget and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and bicycle."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My onyx project update: the onyx value is onyx-114.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your onyx value is onyx-114."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about onyx next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about paint and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about yoga and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about garden and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and budget."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and movie."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and coffee."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and camera."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about bicycle and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about bicycle and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and soccer."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s14_2"
+  ]
+ },
+ {
+  "question_id": "000fab15",
+  "question_type": "single-session-preference",
+  "question": "What is the prairie value in my prairie project?",
+  "answer": "prairie-115",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s15_0",
+   "s15_1",
+   "s15_2",
+   "s15_3",
+   "s15_4",
+   "s15_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about yoga and holiday today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and movie."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and bicycle."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on invoice and laptop."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about budget and soccer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and pasta."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My prairie project update: the prairie value is prairie-115.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your prairie value is prairie-115."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about prairie next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and camera."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and ticket."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and paint."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about yoga and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about yoga and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and movie."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about bicycle and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and pasta."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s15_2"
+  ]
+ },
+ {
+  "question_id": "0010ab16",
+  "question_type": "single-session-preference",
+  "question": "What is the quartz value in my quartz project?",
+  "answer": "quartz-116",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s16_0",
+   "s16_1",
+   "s16_2",
+   "s16_3",
+   "s16_4",
+   "s16_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and laptop."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and train."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and holiday today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and pasta."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about yoga and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and camera."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on camera and laptop."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My quartz project update: the quartz value is quartz-116.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your quartz value is quartz-116."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about quartz next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about yoga and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on camera and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and soccer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and ticket."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on camera and train."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about yoga and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and movie."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about camera and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and laptop."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about printer and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and coffee."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and coffee."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s16_2"
+  ]
+ },
+ {
+  "question_id": "0011ab17",
+  "question_type": "single-session-preference",
+  "question": "What is the reef value in my reef project?",
+  "answer": "reef-117",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s17_0",
+   "s17_1",
+   "s17_2",
+   "s17_3",
+   "s17_4",
+   "s17_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about camera and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and laptop."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and budget."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and holiday today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on laptop and podcast."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and paint."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "My reef project update: the reef value is reef-117.",
+     "has_answer": true
+    },
+    {
+     "role": "assistant",
+     "content": "Noted, your reef value is reef-117."
+    },
+    {
+     "role": "user",
+     "content": "Also remind me about reef next week."
+    },
+    {
+     "role": "assistant",
+     "content": "I will."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and holiday today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and laptop."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and camera."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and laptop."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about yoga and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about coffee and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and holiday."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and train."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and laptop."
+    }
+   ]
+  ],
+  "answer_session_ids": [
+   "s17_2"
+  ]
+ },
+ {
+  "question_id": "0012ab18_abs",
+  "question_type": "knowledge-update",
+  "question": "What is the saffron value in my saffron project?",
+  "answer": "saffron-118",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s18_0",
+   "s18_1",
+   "s18_2",
+   "s18_3",
+   "s18_4",
+   "s18_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about printer and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and invoice."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about paint and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about bicycle and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about garden and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and movie."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and paint."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about printer and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on yoga and budget."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about paint and holiday today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and pasta."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and printer today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and laptop."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on podcast and budget."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and paint today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on camera and movie."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on holiday and garden."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on garden and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and camera."
+    }
+   ]
+  ],
+  "answer_session_ids": []
+ },
+ {
+  "question_id": "0013ab19_abs",
+  "question_type": "single-session-user",
+  "question": "What is the tundra value in my tundra project?",
+  "answer": "tundra-119",
+  "question_date": "2023/06/01 (Thu) 10:00",
+  "haystack_session_ids": [
+   "s19_0",
+   "s19_1",
+   "s19_2",
+   "s19_3",
+   "s19_4",
+   "s19_5"
+  ],
+  "haystack_dates": [
+   "2023/05/10 (Wed) 00:15",
+   "2023/05/11 (Wed) 01:15",
+   "2023/05/12 (Wed) 02:15",
+   "2023/05/13 (Wed) 03:15",
+   "2023/05/14 (Wed) 04:15",
+   "2023/05/15 (Wed) 05:15"
+  ],
+  "haystack_sessions": [
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on train and paint."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and camera today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on budget and bicycle."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about budget and bicycle today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and yoga."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and train."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about train and podcast today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on invoice and yoga."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about podcast and holiday today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on ticket and bicycle."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about movie and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and paint."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and movie today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on bicycle and printer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about soccer and train today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on movie and printer."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about recipe and invoice today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on pasta and camera."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about movie and ticket today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and invoice."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about laptop and recipe today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on coffee and holiday."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and coffee today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on paint and soccer."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about camera and pasta today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on soccer and recipe."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about ticket and budget today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on recipe and paint."
+    }
+   ],
+   [
+    {
+     "role": "user",
+     "content": "Can we talk about invoice and holiday today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and pasta."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about pasta and garden today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on camera and budget."
+    },
+    {
+     "role": "user",
+     "content": "Can we talk about holiday and yoga today?"
+    },
+    {
+     "role": "assistant",
+     "content": "Sure, here is a note on printer and camera."
+    }
+   ]
+  ],
+  "answer_session_ids": []
+ }
+]

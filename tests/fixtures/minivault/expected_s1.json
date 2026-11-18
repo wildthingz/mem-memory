@@ -1,0 +1,583 @@
+{
+ "personal": {
+  "aliases": {
+   "personal/2026-03-02_Trip planning.md": [
+    "Trip planning"
+   ],
+   "personal/2026-04-10_Meeting with Ana.md": [
+    "Ana sync",
+    "Ana sync notes",
+    "Meeting with Ana",
+    "Weekly Ana"
+   ],
+   "personal/2099-01-01_Time capsule.md": [
+    "Time capsule"
+   ],
+   "personal/Long essay.md": [
+    "Long essay"
+   ],
+   "personal/people/Ana Silva.md": [
+    "A. Silva",
+    "Ana",
+    "Ana Silva"
+   ],
+   "personal/people/Carla Diaz.md": [
+    "Carla Diaz"
+   ],
+   "projects/Atlas.md": [
+    "Atlas"
+   ]
+  },
+  "chunks": {
+   "personal/2026-03-02_Trip planning.md": [
+    {
+     "heading_path": "Packing",
+     "key": "Packing#1/p0"
+    },
+    {
+     "heading_path": "Packing",
+     "key": "Packing#2/p0"
+    },
+    {
+     "heading_path": "Food",
+     "key": "Food#1/p0"
+    },
+    {
+     "heading_path": "Budget",
+     "key": "Budget#1/p0"
+    }
+   ],
+   "personal/2026-04-10_Meeting with Ana.md": [
+    {
+     "heading_path": "Ana sync notes > Agenda",
+     "key": "Ana sync notes > Agenda#1/p0"
+    },
+    {
+     "heading_path": "Ana sync notes > Decisions",
+     "key": "Ana sync notes > Decisions#1/p0"
+    }
+   ],
+   "personal/2099-01-01_Time capsule.md": [
+    {
+     "heading_path": "Time capsule > Letter",
+     "key": "Time capsule > Letter#1/p0"
+    }
+   ],
+   "personal/Long essay.md": [
+    {
+     "heading_path": "Long essay > Body",
+     "key": "Long essay > Body#1/p0"
+    },
+    {
+     "heading_path": "Long essay > Body",
+     "key": "Long essay > Body#1/p1"
+    },
+    {
+     "heading_path": "Long essay > Body",
+     "key": "Long essay > Body#1/p2"
+    }
+   ],
+   "personal/people/Ana Silva.md": [
+    {
+     "heading_path": "Ana Silva > Role",
+     "key": "Ana Silva > Role#1/p0"
+    },
+    {
+     "heading_path": "Ana Silva > Contact",
+     "key": "Ana Silva > Contact#1/p0"
+    }
+   ],
+   "personal/people/Carla Diaz.md": [
+    {
+     "heading_path": "Carla Diaz > Role",
+     "key": "Carla Diaz > Role#1/p0"
+    }
+   ],
+   "projects/Atlas.md": [
+    {
+     "heading_path": "Atlas > Goal",
+     "key": "Atlas > Goal#1/p0"
+    },
+    {
+     "heading_path": "Atlas > Risks",
+     "key": "Atlas > Risks#1/p0"
+    }
+   ]
+  },
+  "edges": [
+   {
+    "dst": "tag::travel",
+    "live": true,
+    "occ": [],
+    "rel": "tagged",
+    "src": "personal/2026-03-02_Trip planning.md"
+   },
+   {
+    "dst": "tag::trip/2026",
+    "live": true,
+    "occ": [],
+    "rel": "tagged",
+    "src": "personal/2026-03-02_Trip planning.md"
+   },
+   {
+    "dst": "entity:topic:Bruno",
+    "live": true,
+    "occ": [
+     {
+      "alias": null,
+      "anchor": null,
+      "where": "field:attendees"
+     }
+    ],
+    "rel": "attendee",
+    "src": "personal/2026-04-10_Meeting with Ana.md"
+   },
+   {
+    "dst": "personal/people/Ana Silva.md",
+    "live": true,
+    "occ": [
+     {
+      "alias": null,
+      "anchor": null,
+      "where": "field:attendees"
+     }
+    ],
+    "rel": "attendee",
+    "src": "personal/2026-04-10_Meeting with Ana.md"
+   },
+   {
+    "dst": "personal/diagram.png",
+    "live": true,
+    "occ": [
+     {
+      "alias": null,
+      "anchor": null,
+      "where": "Ana sync notes > Decisions#1/p0"
+     }
+    ],
+    "rel": "embeds",
+    "src": "personal/2026-04-10_Meeting with Ana.md"
+   },
+   {
+    "dst": "entity:topic:Bruno",
+    "live": true,
+    "occ": [
+     {
+      "alias": null,
+      "anchor": null,
+      "where": "Ana sync notes > Decisions#1/p0"
+     }
+    ],
+    "rel": "links_to",
+    "src": "personal/2026-04-10_Meeting with Ana.md"
+   },
+   {
+    "dst": "entity:topic:Ghost Topic",
+    "live": true,
+    "occ": [
+     {
+      "alias": null,
+      "anchor": null,
+      "where": "Ana sync notes > Agenda#1/p0"
+     }
+    ],
+    "rel": "links_to",
+    "src": "personal/2026-04-10_Meeting with Ana.md"
+   },
+   {
+    "dst": "personal/board.canvas",
+    "live": true,
+    "occ": [
+     {
+      "alias": null,
+      "anchor": null,
+      "where": "Ana sync notes > Decisions#1/p0"
+     }
+    ],
+    "rel": "links_to",
+    "src": "personal/2026-04-10_Meeting with Ana.md"
+   },
+   {
+    "dst": "personal/people/Ana Silva.md",
+    "live": true,
+    "occ": [
+     {
+      "alias": null,
+      "anchor": null,
+      "where": "Ana sync notes > Agenda#1/p0"
+     },
+     {
+      "alias": "Ana",
+      "anchor": null,
+      "where": "Ana sync notes > Agenda#1/p0"
+     },
+     {
+      "alias": null,
+      "anchor": "Role",
+      "where": "Ana sync notes > Agenda#1/p0"
+     },
+     {
+      "alias": null,
+      "anchor": "^risk1",
+      "where": "Ana sync notes > Agenda#1/p0"
+     }
+    ],
+    "rel": "links_to",
+    "src": "personal/2026-04-10_Meeting with Ana.md"
+   },
+   {
+    "dst": "projects/Atlas.md",
+    "live": true,
+    "occ": [
+     {
+      "alias": null,
+      "anchor": null,
+      "where": "field:project"
+     }
+    ],
+    "rel": "project",
+    "src": "personal/2026-04-10_Meeting with Ana.md"
+   },
+   {
+    "dst": "tag::meeting",
+    "live": true,
+    "occ": [],
+    "rel": "tagged",
+    "src": "personal/2026-04-10_Meeting with Ana.md"
+   },
+   {
+    "dst": "tag::meeting/weekly",
+    "live": true,
+    "occ": [],
+    "rel": "tagged",
+    "src": "personal/2026-04-10_Meeting with Ana.md"
+   },
+   {
+    "dst": "personal/people/Carla Diaz.md",
+    "live": true,
+    "occ": [
+     {
+      "alias": null,
+      "anchor": null,
+      "where": "field:reports_to"
+     }
+    ],
+    "rel": "reports_to",
+    "src": "personal/people/Ana Silva.md"
+   },
+   {
+    "dst": "tag::person",
+    "live": true,
+    "occ": [],
+    "rel": "tagged",
+    "src": "personal/people/Ana Silva.md"
+   },
+   {
+    "dst": "tag::person",
+    "live": true,
+    "occ": [],
+    "rel": "tagged",
+    "src": "personal/people/Carla Diaz.md"
+   },
+   {
+    "dst": "personal/people/Ana Silva.md",
+    "live": true,
+    "occ": [
+     {
+      "alias": null,
+      "anchor": null,
+      "where": "field:owner"
+     }
+    ],
+    "rel": "owner",
+    "src": "projects/Atlas.md"
+   },
+   {
+    "dst": "tag::project",
+    "live": true,
+    "occ": [],
+    "rel": "tagged",
+    "src": "projects/Atlas.md"
+   },
+   {
+    "dst": "tag::meeting",
+    "live": true,
+    "occ": [],
+    "rel": "part_of",
+    "src": "tag::meeting/weekly"
+   },
+   {
+    "dst": "tag::trip",
+    "live": true,
+    "occ": [],
+    "rel": "part_of",
+    "src": "tag::trip/2026"
+   }
+  ],
+  "nodes": [
+   {
+    "date": "2026-01-15T12:00:00Z",
+    "kind": "entity",
+    "label": "personal/people/Ana Silva.md",
+    "name": "Ana Silva",
+    "status": "active",
+    "type": "person"
+   },
+   {
+    "date": "2026-01-15T12:00:00Z",
+    "kind": "entity",
+    "label": "personal/people/Carla Diaz.md",
+    "name": "Carla Diaz",
+    "status": "active",
+    "type": "person"
+   },
+   {
+    "date": "2026-01-15T12:00:00Z",
+    "kind": "entity",
+    "label": "projects/Atlas.md",
+    "name": "Atlas",
+    "status": "active",
+    "type": "project"
+   },
+   {
+    "date": null,
+    "kind": "entity",
+    "label": "entity:topic:Bruno",
+    "name": "Bruno",
+    "status": "active",
+    "type": "topic"
+   },
+   {
+    "date": null,
+    "kind": "entity",
+    "label": "entity:topic:Ghost Topic",
+    "name": "Ghost Topic",
+    "status": "active",
+    "type": "topic"
+   },
+   {
+    "date": null,
+    "kind": "note",
+    "label": "personal/board.canvas",
+    "name": "board.canvas",
+    "status": "active",
+    "type": "file"
+   },
+   {
+    "date": null,
+    "kind": "note",
+    "label": "personal/diagram.png",
+    "name": "diagram.png",
+    "status": "active",
+    "type": "file"
+   },
+   {
+    "date": "2026-04-10T00:00:00Z",
+    "kind": "note",
+    "label": "personal/2026-04-10_Meeting with Ana.md",
+    "name": "Ana sync notes",
+    "status": "active",
+    "type": "note"
+   },
+   {
+    "date": "2026-01-15T12:00:00Z",
+    "kind": "note",
+    "label": "personal/Long essay.md",
+    "name": "Long essay",
+    "status": "active",
+    "type": "note"
+   },
+   {
+    "date": "2099-01-01T00:00:00Z",
+    "kind": "note",
+    "label": "personal/2099-01-01_Time capsule.md",
+    "name": "Time capsule",
+    "status": "active",
+    "type": "note"
+   },
+   {
+    "date": "2026-03-02T00:00:00Z",
+    "kind": "note",
+    "label": "personal/2026-03-02_Trip planning.md",
+    "name": "Trip planning",
+    "status": "active",
+    "type": "note"
+   },
+   {
+    "date": null,
+    "kind": "tag",
+    "label": "tag::meeting",
+    "name": "meeting",
+    "status": "active",
+    "type": null
+   },
+   {
+    "date": null,
+    "kind": "tag",
+    "label": "tag::meeting/weekly",
+    "name": "meeting/weekly",
+    "status": "active",
+    "type": null
+   },
+   {
+    "date": null,
+    "kind": "tag",
+    "label": "tag::person",
+    "name": "person",
+    "status": "active",
+    "type": null
+   },
+   {
+    "date": null,
+    "kind": "tag",
+    "label": "tag::project",
+    "name": "project",
+    "status": "active",
+    "type": null
+   },
+   {
+    "date": null,
+    "kind": "tag",
+    "label": "tag::travel",
+    "name": "travel",
+    "status": "active",
+    "type": null
+   },
+   {
+    "date": null,
+    "kind": "tag",
+    "label": "tag::trip",
+    "name": "trip",
+    "status": "active",
+    "type": null
+   },
+   {
+    "date": null,
+    "kind": "tag",
+    "label": "tag::trip/2026",
+    "name": "trip/2026",
+    "status": "active",
+    "type": null
+   }
+  ],
+  "props": {
+   "personal/2026-04-10_Meeting with Ana.md": {
+    "room": "B12",
+    "status": "draft"
+   },
+   "personal/people/Ana Silva.md": {
+    "role": "engineer"
+   },
+   "projects/Atlas.md": {
+    "stage": "rollout"
+   }
+  }
+ },
+ "work": {
+  "aliases": {
+   "projects/client-x/Kickoff.md": [
+    "Client X kickoff",
+    "Kickoff"
+   ],
+   "work/2026-05-01_Standup.md": [
+    "Standup"
+   ],
+   "work/Platform.md": [
+    "Platform",
+    "Platform team"
+   ]
+  },
+  "chunks": {
+   "projects/client-x/Kickoff.md": [
+    {
+     "heading_path": "Client X kickoff > Scope",
+     "key": "Client X kickoff > Scope#1/p0"
+    }
+   ],
+   "work/2026-05-01_Standup.md": [
+    {
+     "heading_path": "",
+     "key": "#1/p0"
+    }
+   ],
+   "work/Platform.md": [
+    {
+     "heading_path": "Platform > Mission",
+     "key": "Platform > Mission#1/p0"
+    }
+   ]
+  },
+  "edges": [
+   {
+    "dst": "tag::meeting",
+    "live": true,
+    "occ": [],
+    "rel": "tagged",
+    "src": "projects/client-x/Kickoff.md"
+   },
+   {
+    "dst": "work/Platform.md",
+    "live": true,
+    "occ": [
+     {
+      "alias": null,
+      "anchor": null,
+      "where": "#1/p0"
+     }
+    ],
+    "rel": "links_to",
+    "src": "work/2026-05-01_Standup.md"
+   },
+   {
+    "dst": "tag::team",
+    "live": true,
+    "occ": [],
+    "rel": "tagged",
+    "src": "work/Platform.md"
+   }
+  ],
+  "nodes": [
+   {
+    "date": "2026-01-15T12:00:00Z",
+    "kind": "entity",
+    "label": "work/Platform.md",
+    "name": "Platform",
+    "status": "active",
+    "type": "org"
+   },
+   {
+    "date": "2026-05-02T00:00:00Z",
+    "kind": "note",
+    "label": "projects/client-x/Kickoff.md",
+    "name": "Client X kickoff",
+    "status": "active",
+    "type": "note"
+   },
+   {
+    "date": "2026-05-01T00:00:00Z",
+    "kind": "note",
+    "label": "work/2026-05-01_Standup.md",
+    "name": "Standup",
+    "status": "active",
+    "type": "note"
+   },
+   {
+    "date": null,
+    "kind": "tag",
+    "label": "tag::meeting",
+    "name": "meeting",
+    "status": "active",
+    "type": null
+   },
+   {
+    "date": null,
+    "kind": "tag",
+    "label": "tag::team",
+    "name": "team",
+    "status": "active",
+    "type": null
+   }
+  ],
+  "props": {}
+ }
+}

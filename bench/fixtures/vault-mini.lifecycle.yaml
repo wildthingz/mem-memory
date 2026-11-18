@@ -1,0 +1,39 @@
+# B-I2 descriptor for the mini-vault of the fixture task (tests/fixtures/minivault); see bench/suites/b_p4.py.
+vault: tests/fixtures/minivault/vault
+routes: {projects/client-x: work}
+edit:
+  path: personal/people/Ana Silva.md
+  find: from the home office on Tuesdays
+  replace: from the home office on Mondays
+  chunk_key: "Ana Silva > Contact#1/p0"
+add:
+  path: personal/2026-10-23_New idea.md
+  text: |
+    # New idea
+
+    ## Sketch
+
+    A new idea about the quarterly planning cycle that has enough words in it to stand on its own as a section of the new note, so that the importer writes exactly one new chunk for it and nothing else.
+rename:
+  from: personal/2026-03-02_Trip planning.md
+  to: personal/2026-03-02_Trip planning renamed.md
+delete:
+  path: projects/Atlas.md
+remove:
+  path: personal/2026-04-10_Meeting with Ana.md
+  alias: Weekly Ana
+  alias_edit: {find: "aliases: [Ana sync, Weekly Ana]", replace: "aliases: [Ana sync]"}
+  tag: meeting
+  tag_edit: {find: "tags: [meeting]", replace: "tags: []"}
+  prop_key: room
+  prop_edit: {find: "room: B12\n", replace: ""}
+  link_rel: attendee
+  link_target: personal/people/Ana Silva.md
+  link_edit: {find: 'attendees: ["[[Ana Silva]]", "[[Bruno]]"]', replace: 'attendees: ["[[Bruno]]"]'}
+insert_section:
+  path: projects/Atlas.md
+  before: "## Risks"
+  text: |
+    ## Timeline
+
+    The rollout runs in three waves over the quarter: the pilot teams first, then the product teams that depend on search, and last the support organisation, with a review gate at the end of each wave before the next one may start.

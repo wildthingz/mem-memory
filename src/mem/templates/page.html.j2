@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ page.title }}</title>
+</head>
+<body>
+<h1>{{ page.title }}</h1>
+<dl>
+{% for key, value in front %}
+<dt>{{ key }}</dt><dd>{{ value }}</dd>
+{% endfor %}
+</dl>
+<pre>{{ page.raw_body if page.raw_body is not none else page.text }}</pre>
+{% for section in page.sections %}
+<h2>{{ section[0] }}</h2>
+<ul>
+{% for item in section[1] %}
+<li>{{ item | link }}</li>
+{% endfor %}
+</ul>
+{% endfor %}
+</body>
+</html>

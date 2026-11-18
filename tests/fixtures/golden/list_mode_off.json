@@ -1,0 +1,101 @@
+{
+    "How many hiking trips did I take": [
+        "6 results (of 8 checked) \u00b7 personal\nc1 \u00b7 chat_session \u00b7 2024-03-01 \u00b7 chat session 2024-03-01 \u00b7 .95\nc5 \u00b7 chat_session \u00b7 2024-04-20 \u00b7 chat session 2024-04-20 \u00b7 .95\nc2 \u00b7 chat_session \u00b7 2024-03-09 \u00b7 chat session 2024-03-09 \u00b7 .95\nc3 \u00b7 chat_session \u00b7 2024-03-09 \u00b7 chat session 2024-03-09 \u00b7 .95\nc6 \u00b7 chat_session \u00b7 2024-05-11 \u00b7 chat session 2024-05-11 \u00b7 .95\nc4 \u00b7 chat_session \u00b7 2024-04-02 \u00b7 chat session 2024-04-02 \u00b7 .95",
+        {
+            "abstained": false,
+            "checked": 8,
+            "filters_dropped": [],
+            "rows": [
+                {
+                    "about": [],
+                    "date": "2024-03-01",
+                    "flags": [],
+                    "id": "c1",
+                    "kind": "note",
+                    "p": 0.952574,
+                    "title": "chat session 2024-03-01",
+                    "type": "chat_session"
+                },
+                {
+                    "about": [],
+                    "date": "2024-04-20",
+                    "flags": [],
+                    "id": "c5",
+                    "kind": "note",
+                    "p": 0.952574,
+                    "title": "chat session 2024-04-20",
+                    "type": "chat_session"
+                },
+                {
+                    "about": [],
+                    "date": "2024-03-09",
+                    "flags": [],
+                    "id": "c2",
+                    "kind": "note",
+                    "p": 0.952574,
+                    "title": "chat session 2024-03-09",
+                    "type": "chat_session"
+                },
+                {
+                    "about": [],
+                    "date": "2024-03-09",
+                    "flags": [],
+                    "id": "c3",
+                    "kind": "note",
+                    "p": 0.952574,
+                    "title": "chat session 2024-03-09",
+                    "type": "chat_session"
+                },
+                {
+                    "about": [],
+                    "date": "2024-05-11",
+                    "flags": [],
+                    "id": "c6",
+                    "kind": "note",
+                    "p": 0.952574,
+                    "title": "chat session 2024-05-11",
+                    "type": "chat_session"
+                },
+                {
+                    "about": [],
+                    "date": "2024-04-02",
+                    "flags": [],
+                    "id": "c4",
+                    "kind": "note",
+                    "p": 0.952574,
+                    "title": "chat session 2024-04-02",
+                    "type": "chat_session"
+                }
+            ]
+        }
+    ],
+    "List all the dinners I had": [
+        "no relevant memories (best .27) \u00b7 personal",
+        {
+            "abstained": true,
+            "checked": 8,
+            "filters_dropped": [],
+            "rows": []
+        }
+    ],
+    "Where did I park the car": [
+        "1 results (of 8 checked) \u00b7 personal\nc7 \u00b7 chat_session \u00b7 2024-04-10 \u00b7 chat session 2024-04-10 \u00b7 .50",
+        {
+            "abstained": false,
+            "checked": 8,
+            "filters_dropped": [],
+            "rows": [
+                {
+                    "about": [],
+                    "date": "2024-04-10",
+                    "flags": [],
+                    "id": "c7",
+                    "kind": "note",
+                    "p": 0.5,
+                    "title": "chat session 2024-04-10",
+                    "type": "chat_session"
+                }
+            ]
+        }
+    ]
+}

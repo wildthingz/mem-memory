@@ -1,0 +1,8 @@
+{
+  "name": "mem",
+  "version": "0.0.1",
+  "description": "Local long-term memory for Claude Code: the mem skill and the two mem MCP servers (personal, work) of a mem serve running on this machine. Start the server first: `mem install --no-mcp`.",
+  "keywords": ["memory", "mcp", "local"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

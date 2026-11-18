@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "mem-personal": {
+      "httpUrl": "http://127.0.0.1:8765/personal/mcp",
+      "headers": {
+        "X-Mem-Host": "testhost",
+        "Authorization": "Bearer TESTTOKEN"
+      }
+    },
+    "mem-work": {
+      "httpUrl": "http://127.0.0.1:8765/work/mcp",
+      "headers": {
+        "X-Mem-Host": "testhost",
+        "Authorization": "Bearer TESTTOKEN"
+      }
+    }
+  }
+}

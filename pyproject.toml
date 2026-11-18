@@ -1,0 +1,66 @@
+[project]
+name = "mem"
+version = "0.0.1"
+description = "Local long-term memory for Claude Code over MCP"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "cryptography>=42",
+  "httpx2>=2.16",
+  "huggingface-hub>=0.25",
+  "ijson>=3.3",
+  "jinja2>=3.1",
+  "jsonschema>=4.26.0",
+  "markdown-it-py>=3",
+  "mcp>=2.3.0",
+  "numpy>=1.26",
+  "pyyaml>=6",
+  "scikit-learn>=1.5",
+  "sqlite-vec==0.1.9",
+  "typer>=0.12",
+  "uvicorn>=0.54.0",
+]
+
+[project.optional-dependencies]
+# Heavy: torch + sentence-transformers. Needed by the spike and mem serve, not by unit tests.
+models = ["sentence-transformers>=3.0"]
+llm = [
+    "anthropic>=0.60",
+    "nltk==3.10.4",  # `bench locomo-run`: the Porter stemmer of LoCoMo's official F1 (pinned: it is the metric)
+]
+# `bench temporal-dryrun` only: Option A's date-window dry run (falsified, MEM2-209); nothing in mem uses it.
+dryrun = ["dateparser>=1.4.3"]
+nlp = [
+    "en-core-web-sm",
+    "spacy==3.8.7",
+]
+
+[project.scripts]
+mem = "mem.cli:app"
+bench = "bench.cli:app"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6", "nltk==3.10.4", "dateparser>=1.4.3"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mem", "bench"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"deploy/mem.service" = "mem/_data/deploy/mem.service"
+"skills/mem" = "mem/_data/skills/mem"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+xfail_strict = true
+markers = ["release_defaults: the test sees the release default config (MEM2-261; tests/conftest.py)"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.uv.sources]
+en-core-web-sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" }

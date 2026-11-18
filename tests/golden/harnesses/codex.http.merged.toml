@@ -1,0 +1,13 @@
+model = "gpt-5"
+
+[mcp_servers.other]
+command = "npx"
+args = ["-y", "x"]
+
+[mcp_servers.mem-personal]
+url = "http://127.0.0.1:8765/personal/mcp"
+http_headers = { "X-Mem-Host" = "testhost", "Authorization" = "Bearer TESTTOKEN" }
+
+[mcp_servers.mem-work]
+url = "http://127.0.0.1:8765/work/mcp"
+http_headers = { "X-Mem-Host" = "testhost", "Authorization" = "Bearer TESTTOKEN" }

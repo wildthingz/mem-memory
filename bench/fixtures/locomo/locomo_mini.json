@@ -1,0 +1,157 @@
+[
+ {
+  "sample_id": "conv-t1",
+  "conversation": {
+   "speaker_a": "Nora",
+   "speaker_b": "Owen",
+   "session_1_date_time": "1:56 pm on 8 May, 2023",
+   "session_1": [
+    {
+     "speaker": "Nora",
+     "dia_id": "D1:1",
+     "text": "I joined a pottery class yesterday."
+    },
+    {
+     "speaker": "Owen",
+     "dia_id": "D1:2",
+     "text": "Nice! I adopted a dog named Biscuit."
+    },
+    {
+     "speaker": "Nora",
+     "dia_id": "D1:3",
+     "text": "Send a photo!"
+    },
+    {
+     "speaker": "Nora",
+     "dia_id": "D1:4",
+     "text": "Also I love it."
+    }
+   ],
+   "session_2_date_time": "9:05 am on 3 June, 2023",
+   "session_2": [
+    {
+     "speaker": "Owen",
+     "dia_id": "D2:1",
+     "text": "Biscuit chewed my shoes, then we hiked in Yosemite.",
+     "blip_caption": "a photo of a dog on a trail"
+    },
+    {
+     "speaker": "Nora",
+     "dia_id": "D2:2",
+     "text": "My pottery bowl turned out blue."
+    }
+   ],
+   "session_3_date_time": "11:30 pm on 21 July, 2023",
+   "session_3": [
+    {
+     "speaker": "Nora",
+     "dia_id": "D3:1",
+     "text": "I am moving to Lisbon next month."
+    },
+    {
+     "speaker": "Owen",
+     "dia_id": "D3:2",
+     "text": "Good luck with the move!"
+    }
+   ]
+  },
+  "qa": [
+   {
+    "question": "Where is Nora moving?",
+    "answer": "Lisbon",
+    "evidence": [
+     "D3:1"
+    ],
+    "category": 4
+   },
+   {
+    "question": "When did Nora join a pottery class?",
+    "answer": "7 May 2023",
+    "evidence": [
+     "D1:1"
+    ],
+    "category": 2
+   },
+   {
+    "question": "What pets and hobbies do Nora and Owen have?",
+    "answer": "dog, pottery",
+    "evidence": [
+     "D1:1",
+     "D1:2"
+    ],
+    "category": 1
+   },
+   {
+    "question": "Would Nora likely live abroad?",
+    "answer": "Yes; she is moving to Lisbon",
+    "evidence": [
+     "D3:1"
+    ],
+    "category": 3
+   },
+   {
+    "question": "What colour was Owen's pottery bowl?",
+    "adversarial_answer": "blue",
+    "evidence": [
+     "D2:2"
+    ],
+    "category": 5
+   }
+  ],
+  "observation": {},
+  "session_summary": {},
+  "event_summary": {}
+ },
+ {
+  "sample_id": "conv-t2",
+  "conversation": {
+   "speaker_a": "Nora",
+   "speaker_b": "Owen",
+   "session_1_date_time": "8:00 am on 2 January, 2024",
+   "session_1": [
+    {
+     "speaker": "Owen",
+     "dia_id": "D1:1",
+     "text": "I run every morning."
+    },
+    {
+     "speaker": "Nora",
+     "dia_id": "D1:2",
+     "text": "I just started chess."
+    }
+   ],
+   "session_2_date_time": "6:15 pm on 9 January, 2024",
+   "session_2": [
+    {
+     "speaker": "Nora",
+     "dia_id": "D2:1",
+     "text": "I won my first chess game."
+    },
+    {
+     "speaker": "Owen",
+     "dia_id": "D2:2",
+     "text": "Congrats!"
+    }
+   ]
+  },
+  "qa": [
+   {
+    "question": "How many miles does Owen run?",
+    "adversarial_answer": "five",
+    "evidence": [],
+    "category": 5
+   },
+   {
+    "question": "What year did Nora start chess?",
+    "answer": 2024,
+    "evidence": [
+     "D1:2"
+    ],
+    "category": 2
+   }
+  ],
+  "observation": {},
+  "session_summary": {},
+  "event_summary": {}
+ }
+]

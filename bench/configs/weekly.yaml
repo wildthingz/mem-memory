@@ -1,0 +1,33 @@
+# The weekly T1 suite (P6, benchmarks-v2 §4 P6 row: "weekly T1 suite green").
+# `bench weekly` runs the steps in order. Every gate step is a TUNE run (informational, not a test look,
+# so it costs no look of the <= 3 per phase). A `{name}` in an argv is filled from `vars` (override with
+# --var name=value); a step whose variables are unset is UNAVAILABLE, which fails the week.
+# Paths are those of the phase runbooks (deliverables/runbooks/p*-gate.md), relative to the repo.
+vars:
+  lme_file: data/lme/longmemeval_s_cleaned.json
+  gate_p2: data/lme/gate.json
+  gate_p3: data/syn/gate-p3.json
+  gate_p4: data/p4/gate-p4.json
+  config: ""            # production config.yaml (P4 routes); empty = the built-in pinned config
+  vault_snapshot: ""    # data/vault/vault-YYYY-MM-DD.tar.zst
+  snapshot_sha256: ""
+  pg_snapshot: ""       # data/pg/pgvault-YYYY-MM-DD.tar.zst
+  pg_snapshot_sha256: ""
+steps:
+  - name: pytest
+    argv: [uv, run, --extra, models, pytest, -q]
+  - name: gate-P1
+    argv: [uv, run, --extra, models, bench, gate, P1]
+  - name: gate-P2
+    argv: [uv, run, --with, anthropic, --extra, models, bench, gate, P2, --split, tune,
+           --lme-file, "{lme_file}", --gate, "{gate_p2}", --tokens, est]
+  - name: gate-P3
+    argv: [uv, run, --extra, models, bench, gate, P3, --split, tune, --gate, "{gate_p3}",
+           --lme-file, "{lme_file}", --tokens, est]
+  - name: gate-P4
+    argv: [uv, run, --extra, models, bench, gate, P4, --split, tune, --config, "{config}",
+           --gate, "{gate_p4}", --vault-snapshot, "{vault_snapshot}",
+           --snapshot-sha256, "{snapshot_sha256}", --pg-snapshot, "{pg_snapshot}",
+           --pg-snapshot-sha256, "{pg_snapshot_sha256}", --lme-file, "{lme_file}", --tokens, est]
+  - name: gate-P5-home-only
+    argv: [uv, run, --extra, models, bench, gate, P5, --home-only]

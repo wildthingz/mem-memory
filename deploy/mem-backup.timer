@@ -1,0 +1,11 @@
+# Nightly at 03:30 local; a missed run (machine off) runs at the next boot (Persistent=true).
+[Unit]
+Description=mem: nightly encrypted backup
+
+[Timer]
+OnCalendar=*-*-* 03:30:00
+Persistent=true
+RandomizedDelaySec=5min
+
+[Install]
+WantedBy=timers.target

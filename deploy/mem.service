@@ -1,0 +1,21 @@
+# systemd user unit: one `mem serve --http` on 127.0.0.1, both stores (D4). P7: the tailnet reaches it only through
+# `tailscale serve` https (--tls), every MCP request needs a bearer token (--token-file), requests are rate limited
+# and audited (~/.local/state/mem/audit.jsonl). Create the token file first: docs/multi-machine.md.
+# Install: see docs/install.md. %h = $HOME. Models load once per start.
+[Unit]
+Description=mem: personal long-term memory (MCP over local HTTP)
+After=default.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/code/mem
+# uv is found on PATH (pacman: /usr/bin/uv; astral installer: ~/.local/bin/uv). Zone for date-only
+# inputs: the system zone (/etc/localtime); add --tz <IANA zone> to ExecStart to override.
+Environment=PATH=%h/.local/bin:%h/.cargo/bin:/usr/local/bin:/usr/bin:/bin
+Environment=HF_HUB_OFFLINE=1
+ExecStart=/usr/bin/env uv run --extra models mem serve --http --host 127.0.0.1 --port 8765 --host-label home --tls --token-file %h/.config/mem/tokens
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

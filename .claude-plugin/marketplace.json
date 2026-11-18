@@ -1,0 +1,14 @@
+{
+  "name": "mem",
+  "description": "mem: local long-term memory for Claude Code over MCP.",
+  "owner": {
+    "name": "mem"
+  },
+  "plugins": [
+    {
+      "name": "mem",
+      "source": "./",
+      "description": "Local long-term memory for Claude Code over MCP (needs a local mem serve: mem install --no-mcp)."
+    }
+  ]
+}

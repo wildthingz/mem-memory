@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ scope }}</title>
+</head>
+<body>
+<h1>{{ scope }}</h1>
+{% for section in sections %}
+<h2>{{ section[0] }}</h2>
+<ul>
+{% for item in section[1] %}
+<li>{{ item | link }}</li>
+{% endfor %}
+</ul>
+{% endfor %}
+</body>
+</html>

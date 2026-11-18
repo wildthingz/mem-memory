@@ -1,0 +1,9 @@
+# {{ scope }}
+{% for section in sections %}
+
+## {{ section[0] }}
+
+{% for item in section[1] %}
+- {{ item | link }}
+{% endfor %}
+{% endfor %}

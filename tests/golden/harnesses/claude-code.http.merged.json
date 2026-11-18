@@ -1,0 +1,28 @@
+{
+  "theme": "dark",
+  "mcpServers": {
+    "other": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "x"
+      ]
+    },
+    "mem-personal": {
+      "type": "http",
+      "url": "http://127.0.0.1:8765/personal/mcp",
+      "headers": {
+        "X-Mem-Host": "testhost",
+        "Authorization": "Bearer TESTTOKEN"
+      }
+    },
+    "mem-work": {
+      "type": "http",
+      "url": "http://127.0.0.1:8765/work/mcp",
+      "headers": {
+        "X-Mem-Host": "testhost",
+        "Authorization": "Bearer TESTTOKEN"
+      }
+    }
+  }
+}

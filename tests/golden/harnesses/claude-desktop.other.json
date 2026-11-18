@@ -1,0 +1,12 @@
+{
+  "theme": "dark",
+  "mcpServers": {
+    "other": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "x"
+      ]
+    }
+  }
+}

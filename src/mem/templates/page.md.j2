@@ -1,0 +1,21 @@
+---
+{% for key, value in front %}
+{{ key }}: {{ value | scalar }}
+{% endfor %}
+---
+{% if page.raw_body is not none %}
+{{ page.raw_body }}
+{%- else %}
+
+# {{ page.title }}
+
+{{ page.text }}
+{% for section in page.sections %}
+
+## {{ section[0] }}
+
+{% for item in section[1] %}
+- {{ item | link }}
+{% endfor %}
+{% endfor %}
+{% endif %}

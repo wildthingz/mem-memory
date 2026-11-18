@@ -1,0 +1,3187 @@
+{
+ "gate": {
+  "conf_model": {
+   "bias": -17.02582383,
+   "delta": 5.0,
+   "features": [
+    "rerank",
+    "rerank_gap",
+    "cosine",
+    "cos_gap",
+    "cos_rank",
+    "jaccard",
+    "new_in_old",
+    "old_in_new",
+    "open",
+    "older",
+    "same_instant",
+    "shared_subjects",
+    "same_type"
+   ],
+   "fingerprint": "dc19b39cd12ee203e48246db44bbe176014ca420c327aec7b1681bb41464a1bb",
+   "top_k": 5,
+   "version": 2,
+   "weights": [
+    0.1035927,
+    -0.27362228,
+    9.75155183,
+    -19.17623818,
+    -0.15129478,
+    -2.05356834,
+    -1.19090677,
+    0.68767227,
+    5.45999145,
+    -0.11794399,
+    2.54090265,
+    3.54231668,
+    3.58793191
+   ]
+  },
+  "fingerprint_hash": "3f8c9c11ed6e26fed85e2c0f262ca27db519fff07ef89f15591120a222bdea6f",
+  "fit_id": "lme-s-tune-v1",
+  "fitted_at": "2026-10-29T15:11:42Z",
+  "gap": 0.0009212095,
+  "list_model": {
+   "cap_tokens": 1000,
+   "fingerprint": "cf189d780c1fce96d4cda4b629c4159746964d5c48973b91e3fa7dae2f99d288",
+   "floor": 0.95,
+   "nested": {
+    "cap_tokens": 1000,
+    "feasible": true,
+    "final": {
+     "flat_cv_optimistic": true,
+     "floor": 0.95,
+     "floor_met": true,
+     "train_coverage": 0.950855
+    },
+    "k": 5,
+    "max_heldout_tokens_p95": 603.6,
+    "mean_heldout_coverage": 0.946667,
+    "n": 39,
+    "outer_folds": [
+     {
+      "floor": 0.95,
+      "floor_met": true,
+      "fold": 0,
+      "heldout": {
+       "coverage": 1.0,
+       "demand_p95": 282.0,
+       "n": 5,
+       "rows_mean": 4.8,
+       "tokens_p95": 282.0,
+       "truncated": 0.0
+      },
+      "n_train": 34,
+      "tau_list": 0.026855040022038347,
+      "train_coverage": 0.95098
+     },
+     {
+      "floor": 0.95,
+      "floor_met": true,
+      "fold": 1,
+      "heldout": {
+       "coverage": 1.0,
+       "demand_p95": 529.4,
+       "n": 8,
+       "rows_mean": 9.75,
+       "tokens_p95": 529.4,
+       "truncated": 0.0
+      },
+      "n_train": 31,
+      "tau_list": 0.022800521538501598,
+      "train_coverage": 0.956989
+     },
+     {
+      "floor": 0.95,
+      "floor_met": true,
+      "fold": 2,
+      "heldout": {
+       "coverage": 1.0,
+       "demand_p95": 482.4,
+       "n": 9,
+       "rows_mean": 8.444444,
+       "tokens_p95": 482.4,
+       "truncated": 0.0
+      },
+      "n_train": 30,
+      "tau_list": 0.022800521538501598,
+      "train_coverage": 0.955556
+     },
+     {
+      "floor": 0.95,
+      "floor_met": true,
+      "fold": 3,
+      "heldout": {
+       "coverage": 0.733333,
+       "demand_p95": 299.4,
+       "n": 10,
+       "rows_mean": 3.5,
+       "tokens_p95": 299.4,
+       "truncated": 0.0
+      },
+      "n_train": 29,
+      "tau_list": 0.04551394982132739,
+      "train_coverage": 0.954023
+     },
+     {
+      "floor": 0.95,
+      "floor_met": true,
+      "fold": 4,
+      "heldout": {
+       "coverage": 1.0,
+       "demand_p95": 603.6,
+       "n": 7,
+       "rows_mean": 10.714286,
+       "tokens_p95": 603.6,
+       "truncated": 0.0
+      },
+      "n_train": 32,
+      "tau_list": 0.022990812881254798,
+      "train_coverage": 0.958333
+     }
+    ],
+    "worst_heldout_coverage": 0.733333
+   },
+   "platt_a": 0.5306220174207272,
+   "platt_b": 0.05113704161412311,
+   "tau_list": 0.03073935721279316,
+   "version": 1
+  },
+  "platt_a": 0.5306220174207272,
+  "platt_b": 0.05113704161412311,
+  "read_guard": null,
+  "read_model": null,
+  "tau_high": 1.0,
+  "tau_keep": 0.05348793024695755,
+  "theta_conf": -6.31629,
+  "tune": {
+   "abstention_recall": 0.852174,
+   "coverage_any": 0.921739,
+   "f05": 0.391929,
+   "far": 0.043478,
+   "feasible": false,
+   "front": [
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.426087,
+     "far": 0.530435,
+     "gap": 0.0671707215,
+     "ira": 0.407407,
+     "precision": 0.721519,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.417391,
+     "far": 0.53913,
+     "gap": 0.07036853500000001,
+     "ira": 0.396226,
+     "precision": 0.727273,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.408696,
+     "far": 0.547826,
+     "gap": 0.083678483,
+     "ira": 0.384615,
+     "precision": 0.733333,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.4,
+     "far": 0.556522,
+     "gap": 0.0927826375,
+     "ira": 0.372549,
+     "precision": 0.736111,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.382609,
+     "far": 0.573913,
+     "gap": 0.0927826375,
+     "ira": 0.367347,
+     "precision": 0.73913,
+     "tau_high": 1.0,
+     "tau_keep": 0.46206143346112133,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.373913,
+     "far": 0.582609,
+     "gap": 0.104974333,
+     "ira": 0.354167,
+     "precision": 0.742424,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.365217,
+     "far": 0.6,
+     "gap": 0.10762593000000001,
+     "ira": 0.347826,
+     "precision": 0.75,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.33913,
+     "far": 0.6,
+     "gap": 0.0671707215,
+     "ira": 0.326087,
+     "precision": 0.741379,
+     "tau_high": 1.0,
+     "tau_keep": 0.517968282402876,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.347826,
+     "far": 0.617391,
+     "gap": 0.10762593000000001,
+     "ira": 0.340909,
+     "precision": 0.754098,
+     "tau_high": 1.0,
+     "tau_keep": 0.46206143346112133,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.33913,
+     "far": 0.608696,
+     "gap": 0.07036853500000001,
+     "ira": 0.311111,
+     "precision": 0.754386,
+     "tau_high": 1.0,
+     "tau_keep": 0.517968282402876,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.330435,
+     "far": 0.617391,
+     "gap": 0.083678483,
+     "ira": 0.295455,
+     "precision": 0.763636,
+     "tau_high": 1.0,
+     "tau_keep": 0.517968282402876,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.321739,
+     "far": 0.626087,
+     "gap": 0.0958395075,
+     "ira": 0.27907,
+     "precision": 0.769231,
+     "tau_high": 1.0,
+     "tau_keep": 0.517968282402876,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.304348,
+     "far": 0.643478,
+     "gap": 0.10762593000000001,
+     "ira": 0.243902,
+     "precision": 0.791667,
+     "tau_high": 1.0,
+     "tau_keep": 0.517968282402876,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.286957,
+     "far": 0.66087,
+     "gap": 0.083678483,
+     "ira": 0.230769,
+     "precision": 0.795455,
+     "tau_high": 1.0,
+     "tau_keep": 0.6356989811251622,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.278261,
+     "far": 0.669565,
+     "gap": 0.103321478,
+     "ira": 0.210526,
+     "precision": 0.804878,
+     "tau_high": 1.0,
+     "tau_keep": 0.6356989811251622,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.278261,
+     "far": 0.678261,
+     "gap": 0.166523561,
+     "ira": 0.216216,
+     "precision": 0.809524,
+     "tau_high": 1.0,
+     "tau_keep": 0.517968282402876,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.269565,
+     "far": 0.678261,
+     "gap": 0.108293577,
+     "ira": 0.189189,
+     "precision": 0.820513,
+     "tau_high": 1.0,
+     "tau_keep": 0.6356989811251622,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.278261,
+     "far": 0.695652,
+     "gap": 0.07036853500000001,
+     "ira": 0.2,
+     "precision": 0.829268,
+     "tau_high": 1.0,
+     "tau_keep": 0.6592602789941358,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.269565,
+     "far": 0.704348,
+     "gap": 0.083678483,
+     "ira": 0.176471,
+     "precision": 0.846154,
+     "tau_high": 1.0,
+     "tau_keep": 0.6592602789941358,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.252174,
+     "far": 0.695652,
+     "gap": 0.135016134,
+     "ira": 0.171429,
+     "precision": 0.828571,
+     "tau_high": 1.0,
+     "tau_keep": 0.6356989811251622,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.26087,
+     "far": 0.713043,
+     "gap": 0.103321478,
+     "ira": 0.151515,
+     "precision": 0.861111,
+     "tau_high": 1.0,
+     "tau_keep": 0.6592602789941358,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.252174,
+     "far": 0.704348,
+     "gap": 0.166523561,
+     "ira": 0.147059,
+     "precision": 0.852941,
+     "tau_high": 1.0,
+     "tau_keep": 0.6356989811251622,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.26087,
+     "far": 0.730435,
+     "gap": 0.2614974335,
+     "ira": 0.16129,
+     "precision": 0.864865,
+     "tau_high": 1.0,
+     "tau_keep": 0.4200949642093027,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.252174,
+     "far": 0.721739,
+     "gap": 0.108293577,
+     "ira": 0.125,
+     "precision": 0.882353,
+     "tau_high": 1.0,
+     "tau_keep": 0.6592602789941358,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.234783,
+     "far": 0.73913,
+     "gap": 0.166523561,
+     "ira": 0.1,
+     "precision": 0.9,
+     "tau_high": 1.0,
+     "tau_keep": 0.6592602789941358,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.208696,
+     "far": 0.773913,
+     "gap": 0.285676406,
+     "ira": 0.076923,
+     "precision": 0.923077,
+     "tau_high": 1.0,
+     "tau_keep": 0.54760272001005,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.165217,
+     "far": 0.826087,
+     "gap": 0.4068122035,
+     "ira": 0.05,
+     "precision": 0.95,
+     "tau_high": 1.0,
+     "tau_keep": 0.6592602789941358,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.095652,
+     "far": 0.904348,
+     "gap": 0.4160317975,
+     "ira": 0.0,
+     "precision": 1.0,
+     "tau_high": 1.0,
+     "tau_keep": 0.800979413251503,
+     "unmet": [
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.86087,
+     "coverage_any": 0.921739,
+     "far": 0.043478,
+     "gap": 0.015829516,
+     "ira": 2.619048,
+     "precision": 0.342629,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.05295620126719234,
+     "unmet": [
+      "delivered_precision",
+      "ira"
+     ]
+    },
+    {
+     "abstention_recall": 0.852174,
+     "coverage_any": 0.930435,
+     "far": 0.034783,
+     "gap": 0.036335026,
+     "ira": 2.71875,
+     "precision": 0.334608,
+     "tau_high": 0.0531571775,
+     "tau_keep": 0.04952022691767078,
+     "unmet": [
+      "delivered_precision",
+      "ira"
+     ]
+    },
+    {
+     "abstention_recall": 0.86087,
+     "coverage_any": 0.930435,
+     "far": 0.043478,
+     "gap": 0.0244234695,
+     "ira": 2.738095,
+     "precision": 0.336538,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.04952022691767078,
+     "unmet": [
+      "delivered_precision",
+      "ira"
+     ]
+    },
+    {
+     "abstention_recall": 0.852174,
+     "coverage_any": 0.93913,
+     "far": 0.043478,
+     "gap": 0.0244234695,
+     "ira": 3.094488,
+     "precision": 0.310526,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.04201597648053534,
+     "unmet": [
+      "delivered_precision",
+      "ira"
+     ]
+    },
+    {
+     "abstention_recall": 0.852174,
+     "coverage_any": 0.93913,
+     "far": 0.034783,
+     "gap": 0.036335026,
+     "ira": 3.117188,
+     "precision": 0.307292,
+     "tau_high": 0.0531571775,
+     "tau_keep": 0.04201597648053534,
+     "unmet": [
+      "delivered_precision",
+      "ira"
+     ]
+    },
+    {
+     "abstention_recall": 0.852174,
+     "coverage_any": 0.947826,
+     "far": 0.034783,
+     "gap": 0.036335026,
+     "ira": 4.429688,
+     "precision": 0.247012,
+     "tau_high": 0.0531571775,
+     "tau_keep": 0.022990812881254798,
+     "unmet": [
+      "delivered_precision",
+      "ira"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.443478,
+     "far": 0.513043,
+     "gap": 0.0671707215,
+     "ira": 0.482143,
+     "precision": 0.686047,
+     "tau_high": 1.0,
+     "tau_keep": 0.4200949642093027,
+     "unmet": [
+      "delivered_precision",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.434783,
+     "far": 0.521739,
+     "gap": 0.0639688225,
+     "ira": 0.472727,
+     "precision": 0.690476,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "delivered_precision",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.434783,
+     "far": 0.530435,
+     "gap": 0.0671707215,
+     "ira": 0.462963,
+     "precision": 0.698795,
+     "tau_high": 1.0,
+     "tau_keep": 0.43707278578596054,
+     "unmet": [
+      "delivered_precision",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.930435,
+     "coverage_any": 0.852174,
+     "far": 0.104348,
+     "gap": 0.008797345500000001,
+     "ira": 1.90991,
+     "precision": 0.419178,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.08094058863424923,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.921739,
+     "coverage_any": 0.869565,
+     "far": 0.086957,
+     "gap": 0.006974530499999999,
+     "ira": 1.929825,
+     "precision": 0.413333,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.08094058863424923,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.930435,
+     "coverage_any": 0.86087,
+     "far": 0.095652,
+     "gap": 0.017044771,
+     "ira": 1.928571,
+     "precision": 0.416216,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.08094058863424923,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.921739,
+     "coverage_any": 0.869565,
+     "far": 0.078261,
+     "gap": 0.006974530499999999,
+     "ira": 1.973913,
+     "precision": 0.405759,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.07812664223983999,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.930435,
+     "coverage_any": 0.86087,
+     "far": 0.086957,
+     "gap": 0.012880248,
+     "ira": 1.973451,
+     "precision": 0.408488,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.07812664223983999,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.904348,
+     "coverage_any": 0.895652,
+     "far": 0.069565,
+     "gap": 0.0009212095,
+     "ira": 2.254237,
+     "precision": 0.378505,
+     "tau_high": 1.0,
+     "tau_keep": 0.06547397724743585,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.913043,
+     "coverage_any": 0.886957,
+     "far": 0.078261,
+     "gap": 0.006974530499999999,
+     "ira": 2.25,
+     "precision": 0.381517,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.06547397724743585,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.921739,
+     "coverage_any": 0.878261,
+     "far": 0.086957,
+     "gap": 0.012880248,
+     "ira": 2.254386,
+     "precision": 0.383693,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.06547397724743585,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.895652,
+     "coverage_any": 0.904348,
+     "far": 0.06087,
+     "gap": 0.0009212095,
+     "ira": 2.333333,
+     "precision": 0.369369,
+     "tau_high": 1.0,
+     "tau_keep": 0.06201221631436895,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.895652,
+     "coverage_any": 0.913043,
+     "far": 0.06087,
+     "gap": 1.0,
+     "ira": 2.541667,
+     "precision": 0.352442,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.05766734429610155,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.86087,
+     "coverage_any": 0.913043,
+     "far": 0.052174,
+     "gap": 0.015829516,
+     "ira": 2.544,
+     "precision": 0.34433,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.05665209543548326,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.86087,
+     "coverage_any": 0.913043,
+     "far": 0.052174,
+     "gap": 0.015829516,
+     "ira": 2.568,
+     "precision": 0.344898,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.05493564419089552,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.904348,
+     "coverage_any": 0.904348,
+     "far": 0.069565,
+     "gap": 1.0,
+     "ira": 2.576271,
+     "precision": 0.351812,
+     "tau_high": 0.06519617250000001,
+     "tau_keep": 0.05766734429610155,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.913043,
+     "coverage_any": 0.895652,
+     "far": 0.078261,
+     "gap": 1.0,
+     "ira": 2.603448,
+     "precision": 0.351931,
+     "tau_high": 0.0739305335,
+     "tau_keep": 0.05766734429610155,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.878261,
+     "coverage_any": 0.921739,
+     "far": 0.052174,
+     "gap": 0.0244234695,
+     "ira": 2.658537,
+     "precision": 0.344689,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.05295620126719234,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.895652,
+     "coverage_any": 0.921739,
+     "far": 0.052174,
+     "gap": 0.036335026,
+     "ira": 2.818182,
+     "precision": 0.337864,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.04952022691767078,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.904348,
+     "coverage_any": 0.913043,
+     "far": 0.06087,
+     "gap": 0.036335026,
+     "ira": 2.848739,
+     "precision": 0.337891,
+     "tau_high": 0.06519617250000001,
+     "tau_keep": 0.04952022691767078,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.895652,
+     "coverage_any": 0.930435,
+     "far": 0.052174,
+     "gap": 0.036335026,
+     "ira": 3.206612,
+     "precision": 0.312057,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.04201597648053534,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.904348,
+     "coverage_any": 0.921739,
+     "far": 0.06087,
+     "gap": 0.036335026,
+     "ira": 3.243697,
+     "precision": 0.311943,
+     "tau_high": 0.06519617250000001,
+     "tau_keep": 0.04201597648053534,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.521739,
+     "coverage_any": 0.947826,
+     "far": 0.026087,
+     "gap": 0.004187589,
+     "ira": 3.766467,
+     "precision": 0.228221,
+     "tau_high": 0.06519617250000001,
+     "tau_keep": 0.023658365444400267,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.513043,
+     "coverage_any": 0.947826,
+     "far": 0.017391,
+     "gap": 0.004187589,
+     "ira": 3.763314,
+     "precision": 0.226277,
+     "tau_high": 0.06519617250000001,
+     "tau_keep": 0.023346560006787472,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.652174,
+     "coverage_any": 0.93913,
+     "far": 0.026087,
+     "gap": 0.007873591,
+     "ira": 3.940789,
+     "precision": 0.235969,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.023346560006787472,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.504348,
+     "coverage_any": 0.956522,
+     "far": 0.017391,
+     "gap": 0.004187589,
+     "ira": 3.8,
+     "precision": 0.22449,
+     "tau_high": 0.06519617250000001,
+     "tau_keep": 0.022990812881254798,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.652174,
+     "coverage_any": 0.947826,
+     "far": 0.026087,
+     "gap": 0.007873591,
+     "ira": 3.986842,
+     "precision": 0.234848,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.022990812881254798,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.913043,
+     "coverage_any": 0.904348,
+     "far": 0.078261,
+     "gap": 1.0,
+     "ira": 4.422414,
+     "precision": 0.257598,
+     "tau_high": 0.0739305335,
+     "tau_keep": 0.023658365444400267,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.417391,
+     "coverage_any": 0.965217,
+     "far": 0.008696,
+     "gap": 0.002135952,
+     "ira": 4.060773,
+     "precision": 0.204545,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.019176387838912918,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.4,
+     "coverage_any": 0.965217,
+     "far": 0.0,
+     "gap": 0.002135952,
+     "ira": 4.086957,
+     "precision": 0.20085,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.018620190867323982,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.4,
+     "coverage_any": 0.965217,
+     "far": 0.0,
+     "gap": 0.002135952,
+     "ira": 4.097826,
+     "precision": 0.201271,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.01851378771163875,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.443478,
+     "coverage_any": 0.956522,
+     "far": 0.008696,
+     "gap": 0.004187589,
+     "ira": 4.157303,
+     "precision": 0.202586,
+     "tau_high": 0.06519617250000001,
+     "tau_keep": 0.018620190867323982,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.443478,
+     "coverage_any": 0.956522,
+     "far": 0.008696,
+     "gap": 0.004187589,
+     "ira": 4.168539,
+     "precision": 0.203008,
+     "tau_high": 0.06519617250000001,
+     "tau_keep": 0.01851378771163875,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.634783,
+     "coverage_any": 0.956522,
+     "far": 0.026087,
+     "gap": 0.007873591,
+     "ira": 4.980519,
+     "precision": 0.197699,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.01475153661256838,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.347826,
+     "coverage_any": 0.973913,
+     "far": 0.0,
+     "gap": 0.002135952,
+     "ira": 4.689474,
+     "precision": 0.176525,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.01475153661256838,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.434783,
+     "coverage_any": 0.965217,
+     "far": 0.008696,
+     "gap": 0.004187589,
+     "ira": 4.821229,
+     "precision": 0.180437,
+     "tau_high": 0.06519617250000001,
+     "tau_keep": 0.01475153661256838,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.904348,
+     "coverage_any": 0.930435,
+     "far": 0.06087,
+     "gap": 0.036335026,
+     "ira": 5.647059,
+     "precision": 0.213115,
+     "tau_high": 0.06519617250000001,
+     "tau_keep": 0.011697103263680444,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.895652,
+     "coverage_any": 0.93913,
+     "far": 0.052174,
+     "gap": 0.036335026,
+     "ira": 5.669421,
+     "precision": 0.211494,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.011697103263680444,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.913043,
+     "coverage_any": 0.913043,
+     "far": 0.078261,
+     "gap": 1.0,
+     "ira": 5.715517,
+     "precision": 0.212589,
+     "tau_high": 0.0739305335,
+     "tau_keep": 0.011697103263680444,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.634783,
+     "coverage_any": 0.965217,
+     "far": 0.026087,
+     "gap": 0.007873591,
+     "ira": 5.512987,
+     "precision": 0.182868,
+     "tau_high": 0.061964992499999996,
+     "tau_keep": 0.011697103263680444,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.443478,
+     "coverage_any": 0.965217,
+     "far": 0.017391,
+     "gap": 1.0,
+     "ira": 5.412429,
+     "precision": 0.165505,
+     "tau_high": 0.02333986,
+     "tau_keep": 0.013112011267703215,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.417391,
+     "coverage_any": 0.973913,
+     "far": 0.008696,
+     "gap": 0.004187589,
+     "ira": 5.414365,
+     "precision": 0.163108,
+     "tau_high": 0.06519617250000001,
+     "tau_keep": 0.011697103263680444,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.304348,
+     "coverage_any": 0.982609,
+     "far": 0.0,
+     "gap": 1.0,
+     "ira": 5.512821,
+     "precision": 0.151539,
+     "tau_high": 0.0186440145,
+     "tau_keep": 0.011697103263680444,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.443478,
+     "coverage_any": 0.973913,
+     "far": 0.017391,
+     "gap": 1.0,
+     "ira": 5.740113,
+     "precision": 0.158244,
+     "tau_high": 0.02333986,
+     "tau_keep": 0.011697103263680444,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "abstention_recall"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.521739,
+     "far": 0.434783,
+     "gap": 0.014501667,
+     "ira": 0.590909,
+     "precision": 0.654867,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.478261,
+     "far": 0.478261,
+     "gap": 0.038482571,
+     "ira": 0.533333,
+     "precision": 0.666667,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.469565,
+     "far": 0.486957,
+     "gap": 0.0436239625,
+     "ira": 0.525424,
+     "precision": 0.670213,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.53913,
+     "far": 0.417391,
+     "gap": 0.011614880000000001,
+     "ira": 0.647059,
+     "precision": 0.639344,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.452174,
+     "far": 0.504348,
+     "gap": 0.050400871,
+     "ira": 0.508772,
+     "precision": 0.674157,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.530435,
+     "far": 0.426087,
+     "gap": 0.0126362765,
+     "ira": 0.641791,
+     "precision": 0.638655,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.53913,
+     "far": 0.408696,
+     "gap": 0.014501667,
+     "ira": 0.666667,
+     "precision": 0.622951,
+     "tau_high": 1.0,
+     "tau_keep": 0.4200949642093027,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.486957,
+     "far": 0.469565,
+     "gap": 0.0671707215,
+     "ira": 0.590164,
+     "precision": 0.653846,
+     "tau_high": 0.8611276755,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.6,
+     "far": 0.33913,
+     "gap": 0.038482571,
+     "ira": 0.782051,
+     "precision": 0.598684,
+     "tau_high": 1.0,
+     "tau_keep": 0.2649133778134524,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.547826,
+     "far": 0.408696,
+     "gap": 0.011614880000000001,
+     "ira": 0.695652,
+     "precision": 0.622047,
+     "tau_high": 1.0,
+     "tau_keep": 0.43707278578596054,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.556522,
+     "far": 0.391304,
+     "gap": 0.011614880000000001,
+     "ira": 0.71831,
+     "precision": 0.613636,
+     "tau_high": 1.0,
+     "tau_keep": 0.4200949642093027,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.678261,
+     "far": 0.26087,
+     "gap": 0.008797345500000001,
+     "ira": 0.931818,
+     "precision": 0.570681,
+     "tau_high": 1.0,
+     "tau_keep": 0.2649133778134524,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.573913,
+     "far": 0.373913,
+     "gap": 0.038482571,
+     "ira": 0.753425,
+     "precision": 0.604317,
+     "tau_high": 1.0,
+     "tau_keep": 0.3105518821486912,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.513043,
+     "far": 0.443478,
+     "gap": 0.0436239625,
+     "ira": 0.65625,
+     "precision": 0.631579,
+     "tau_high": 0.8929837775,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.495652,
+     "far": 0.46087,
+     "gap": 0.0671707215,
+     "ira": 0.629032,
+     "precision": 0.638889,
+     "tau_high": 0.8929837775,
+     "tau_keep": 0.4200949642093027,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.556522,
+     "far": 0.4,
+     "gap": 0.0009212095,
+     "ira": 0.728571,
+     "precision": 0.616541,
+     "tau_high": 1.0,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.556522,
+     "far": 0.408696,
+     "gap": 0.1521354535,
+     "ira": 0.724638,
+     "precision": 0.621212,
+     "tau_high": 0.45634554,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.547826,
+     "far": 0.4,
+     "gap": 0.0126362765,
+     "ira": 0.714286,
+     "precision": 0.609375,
+     "tau_high": 1.0,
+     "tau_keep": 0.4200949642093027,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.565217,
+     "far": 0.382609,
+     "gap": 0.0436239625,
+     "ira": 0.75,
+     "precision": 0.602941,
+     "tau_high": 1.0,
+     "tau_keep": 0.3105518821486912,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.504348,
+     "far": 0.452174,
+     "gap": 0.0436239625,
+     "ira": 0.650794,
+     "precision": 0.630631,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.4439113266466914,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.608696,
+     "far": 0.330435,
+     "gap": 0.038482571,
+     "ira": 0.835443,
+     "precision": 0.584906,
+     "tau_high": 0.9887837005,
+     "tau_keep": 0.2649133778134524,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.686957,
+     "far": 0.252174,
+     "gap": 0.0009212095,
+     "ira": 0.977528,
+     "precision": 0.560606,
+     "tau_high": 1.0,
+     "tau_keep": 0.2722625982653237,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.626087,
+     "far": 0.313043,
+     "gap": 0.0436239625,
+     "ira": 0.876543,
+     "precision": 0.579882,
+     "tau_high": 0.8929837775,
+     "tau_keep": 0.2722625982653237,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.634783,
+     "far": 0.304348,
+     "gap": 0.0436239625,
+     "ira": 0.890244,
+     "precision": 0.575581,
+     "tau_high": 0.8929837775,
+     "tau_keep": 0.2649133778134524,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.617391,
+     "far": 0.321739,
+     "gap": 0.038482571,
+     "ira": 0.8625,
+     "precision": 0.579268,
+     "tau_high": 0.986852671,
+     "tau_keep": 0.2649133778134524,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.643478,
+     "far": 0.304348,
+     "gap": 0.008797345500000001,
+     "ira": 0.902439,
+     "precision": 0.574713,
+     "tau_high": 1.0,
+     "tau_keep": 0.3105518821486912,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.695652,
+     "far": 0.243478,
+     "gap": 0.0009212095,
+     "ira": 1.0,
+     "precision": 0.55665,
+     "tau_high": 1.0,
+     "tau_keep": 0.2649133778134524,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.565217,
+     "far": 0.4,
+     "gap": 0.1200183425,
+     "ira": 0.771429,
+     "precision": 0.605839,
+     "tau_high": 0.45634554,
+     "tau_keep": 0.43707278578596054,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.582609,
+     "far": 0.365217,
+     "gap": 0.038482571,
+     "ira": 0.810811,
+     "precision": 0.589041,
+     "tau_high": 0.9887837005,
+     "tau_keep": 0.3105518821486912,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.521739,
+     "far": 0.434783,
+     "gap": 0.0436239625,
+     "ira": 0.707692,
+     "precision": 0.613445,
+     "tau_high": 0.8929837775,
+     "tau_keep": 0.43707278578596054,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.530435,
+     "far": 0.417391,
+     "gap": 0.0436239625,
+     "ira": 0.731343,
+     "precision": 0.601626,
+     "tau_high": 0.8929837775,
+     "tau_keep": 0.4200949642093027,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.669565,
+     "far": 0.269565,
+     "gap": 1.0,
+     "ira": 0.976744,
+     "precision": 0.557895,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.29596890269181186,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.608696,
+     "far": 0.33913,
+     "gap": 0.0436239625,
+     "ira": 0.87013,
+     "precision": 0.578616,
+     "tau_high": 0.8929837775,
+     "tau_keep": 0.3105518821486912,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.591304,
+     "far": 0.356522,
+     "gap": 0.038482571,
+     "ira": 0.84,
+     "precision": 0.582781,
+     "tau_high": 0.986852671,
+     "tau_keep": 0.3105518821486912,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.521739,
+     "far": 0.426087,
+     "gap": 0.0436239625,
+     "ira": 0.727273,
+     "precision": 0.6,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.4200949642093027,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.652174,
+     "far": 0.295652,
+     "gap": 0.0017241075,
+     "ira": 0.951807,
+     "precision": 0.563536,
+     "tau_high": 1.0,
+     "tau_keep": 0.3105518821486912,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.6,
+     "far": 0.347826,
+     "gap": 0.0436239625,
+     "ira": 0.868421,
+     "precision": 0.576923,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.3105518821486912,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.669565,
+     "far": 0.269565,
+     "gap": 1.0,
+     "ira": 1.0,
+     "precision": 0.558974,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.2722625982653237,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.66087,
+     "far": 0.286957,
+     "gap": 0.0009212095,
+     "ira": 0.97619,
+     "precision": 0.55914,
+     "tau_high": 1.0,
+     "tau_keep": 0.3105518821486912,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.956522,
+     "coverage_any": 0.73913,
+     "far": 0.217391,
+     "gap": 0.0009212095,
+     "ira": 1.105263,
+     "precision": 0.533333,
+     "tau_high": 1.0,
+     "tau_keep": 0.2171122531355145,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 1.0,
+     "coverage_any": 0.530435,
+     "far": 0.408696,
+     "gap": 0.0436239625,
+     "ira": 0.764706,
+     "precision": 0.587302,
+     "tau_high": 0.8929837775,
+     "tau_keep": 0.40001329548217335,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.956522,
+     "coverage_any": 0.747826,
+     "far": 0.217391,
+     "gap": 0.0009212095,
+     "ira": 1.126316,
+     "precision": 0.534783,
+     "tau_high": 1.0,
+     "tau_keep": 0.20624862307194142,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.66087,
+     "far": 0.295652,
+     "gap": 1.0,
+     "ira": 0.987952,
+     "precision": 0.561497,
+     "tau_high": 0.31236570750000003,
+     "tau_keep": 0.29596890269181186,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.965217,
+     "coverage_any": 0.721739,
+     "far": 0.226087,
+     "gap": 1.0,
+     "ira": 1.096774,
+     "precision": 0.534247,
+     "tau_high": 0.23337649300000002,
+     "tau_keep": 0.23272829687638838,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.66087,
+     "far": 0.286957,
+     "gap": 1.0,
+     "ira": 1.011905,
+     "precision": 0.559585,
+     "tau_high": 0.308926452,
+     "tau_keep": 0.2722625982653237,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.956522,
+     "coverage_any": 0.756522,
+     "far": 0.208696,
+     "gap": 0.0009212095,
+     "ira": 1.15625,
+     "precision": 0.529661,
+     "tau_high": 1.0,
+     "tau_keep": 0.1890749731085379,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.965217,
+     "coverage_any": 0.730435,
+     "far": 0.226087,
+     "gap": 0.05521343,
+     "ira": 1.11828,
+     "precision": 0.533632,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.2171122531355145,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.704348,
+     "far": 0.234783,
+     "gap": 0.0009212095,
+     "ira": 1.087912,
+     "precision": 0.535211,
+     "tau_high": 1.0,
+     "tau_keep": 0.2375621492176905,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.66087,
+     "far": 0.295652,
+     "gap": 1.0,
+     "ira": 1.012048,
+     "precision": 0.5625,
+     "tau_high": 0.31236570750000003,
+     "tau_keep": 0.2722625982653237,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.965217,
+     "coverage_any": 0.73913,
+     "far": 0.226087,
+     "gap": 0.05521343,
+     "ira": 1.139785,
+     "precision": 0.535088,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.20624862307194142,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.956522,
+     "coverage_any": 0.756522,
+     "far": 0.2,
+     "gap": 0.0009212095,
+     "ira": 1.175258,
+     "precision": 0.526971,
+     "tau_high": 1.0,
+     "tau_keep": 0.18216261278083615,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.713043,
+     "far": 0.234783,
+     "gap": 1.0,
+     "ira": 1.10989,
+     "precision": 0.534562,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.23272829687638838,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.965217,
+     "coverage_any": 0.747826,
+     "far": 0.217391,
+     "gap": 0.1576208345,
+     "ira": 1.170213,
+     "precision": 0.529915,
+     "tau_high": 0.23337649300000002,
+     "tau_keep": 0.1890749731085379,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.721739,
+     "far": 0.234783,
+     "gap": 1.0,
+     "ira": 1.131868,
+     "precision": 0.533937,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.2171122531355145,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.730435,
+     "far": 0.234783,
+     "gap": 1.0,
+     "ira": 1.153846,
+     "precision": 0.535398,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.20624862307194142,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.965217,
+     "coverage_any": 0.747826,
+     "far": 0.208696,
+     "gap": 0.1020066685,
+     "ira": 1.189474,
+     "precision": 0.527197,
+     "tau_high": 0.23337649300000002,
+     "tau_keep": 0.18216261278083615,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.73913,
+     "far": 0.226087,
+     "gap": 0.1576208345,
+     "ira": 1.184783,
+     "precision": 0.528139,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.1890749731085379,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.73913,
+     "far": 0.217391,
+     "gap": 0.1020066685,
+     "ira": 1.204301,
+     "precision": 0.525424,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.18216261278083615,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.626087,
+     "far": 0.330435,
+     "gap": 0.232460876,
+     "ira": 1.012821,
+     "precision": 0.558659,
+     "tau_high": 0.41077731,
+     "tau_keep": 0.3105518821486912,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.617391,
+     "far": 0.33913,
+     "gap": 0.232460876,
+     "ira": 1.012987,
+     "precision": 0.559322,
+     "tau_high": 0.41077731,
+     "tau_keep": 0.3253550465510207,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.617391,
+     "far": 0.347826,
+     "gap": 0.232460876,
+     "ira": 1.013158,
+     "precision": 0.5625,
+     "tau_high": 0.43492938800000003,
+     "tau_keep": 0.3253550465510207,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.678261,
+     "far": 0.269565,
+     "gap": 1.0,
+     "ira": 1.162791,
+     "precision": 0.528302,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.23272829687638838,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.686957,
+     "far": 0.269565,
+     "gap": 1.0,
+     "ira": 1.186047,
+     "precision": 0.527778,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.2171122531355145,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.695652,
+     "far": 0.269565,
+     "gap": 1.0,
+     "ira": 1.209302,
+     "precision": 0.529412,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.20624862307194142,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.686957,
+     "far": 0.286957,
+     "gap": 1.0,
+     "ira": 1.214286,
+     "precision": 0.529954,
+     "tau_high": 0.308926452,
+     "tau_keep": 0.20624862307194142,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.678261,
+     "far": 0.295652,
+     "gap": 1.0,
+     "ira": 1.216867,
+     "precision": 0.530233,
+     "tau_high": 0.31236570750000003,
+     "tau_keep": 0.20624862307194142,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.956522,
+     "coverage_any": 0.765217,
+     "far": 0.2,
+     "gap": 0.0894189945,
+     "ira": 1.371134,
+     "precision": 0.496212,
+     "tau_high": 0.23337649300000002,
+     "tau_keep": 0.1584791578852422,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.965217,
+     "coverage_any": 0.756522,
+     "far": 0.208696,
+     "gap": 0.0894189945,
+     "ira": 1.368421,
+     "precision": 0.498069,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.1584791578852422,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.747826,
+     "far": 0.217391,
+     "gap": 0.1020066685,
+     "ira": 1.387097,
+     "precision": 0.498054,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.1584791578852422,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.747826,
+     "far": 0.226087,
+     "gap": 0.1576208345,
+     "ira": 1.391304,
+     "precision": 0.5,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.1584791578852422,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.93913,
+     "coverage_any": 0.765217,
+     "far": 0.191304,
+     "gap": 0.0009212095,
+     "ira": 1.44,
+     "precision": 0.480144,
+     "tau_high": 1.0,
+     "tau_keep": 0.13935191584556797,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.947826,
+     "coverage_any": 0.765217,
+     "far": 0.191304,
+     "gap": 0.05521343,
+     "ira": 1.454545,
+     "precision": 0.482014,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.13194640094427454,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.93913,
+     "coverage_any": 0.773913,
+     "far": 0.173913,
+     "gap": 0.077833845,
+     "ira": 1.480392,
+     "precision": 0.473868,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.13194640094427454,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.93913,
+     "coverage_any": 0.773913,
+     "far": 0.182609,
+     "gap": 0.008797345500000001,
+     "ira": 1.475248,
+     "precision": 0.477193,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.13194640094427454,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.93913,
+     "coverage_any": 0.782609,
+     "far": 0.156522,
+     "gap": 0.018291955,
+     "ira": 1.538462,
+     "precision": 0.463087,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.12178245986872686,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.93913,
+     "coverage_any": 0.782609,
+     "far": 0.165217,
+     "gap": 0.008797345500000001,
+     "ira": 1.533981,
+     "precision": 0.466216,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.12178245986872686,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.93913,
+     "coverage_any": 0.791304,
+     "far": 0.147826,
+     "gap": 0.0175688695,
+     "ira": 1.561905,
+     "precision": 0.460526,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.11724418022123055,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.93913,
+     "coverage_any": 0.791304,
+     "far": 0.156522,
+     "gap": 0.008797345500000001,
+     "ira": 1.557692,
+     "precision": 0.463576,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.11724418022123055,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.930435,
+     "coverage_any": 0.8,
+     "far": 0.165217,
+     "gap": 0.008797345500000001,
+     "ira": 1.557692,
+     "precision": 0.461794,
+     "tau_high": 1.0,
+     "tau_keep": 0.10976248692946135,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.947826,
+     "coverage_any": 0.765217,
+     "far": 0.182609,
+     "gap": 0.05521343,
+     "ira": 1.53,
+     "precision": 0.46875,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.12178245986872686,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.930435,
+     "coverage_any": 0.808696,
+     "far": 0.156522,
+     "gap": 0.008797345500000001,
+     "ira": 1.590476,
+     "precision": 0.457792,
+     "tau_high": 0.9887837005,
+     "tau_keep": 0.10976248692946135,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.930435,
+     "coverage_any": 0.817391,
+     "far": 0.13913,
+     "gap": 0.0175688695,
+     "ira": 1.616822,
+     "precision": 0.452532,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.10976248692946135,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.930435,
+     "coverage_any": 0.817391,
+     "far": 0.147826,
+     "gap": 0.008797345500000001,
+     "ira": 1.613208,
+     "precision": 0.455414,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.10976248692946135,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.93913,
+     "coverage_any": 0.8,
+     "far": 0.147826,
+     "gap": 0.0175688695,
+     "ira": 1.609524,
+     "precision": 0.454839,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.11408511927247861,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.93913,
+     "coverage_any": 0.8,
+     "far": 0.156522,
+     "gap": 0.008797345500000001,
+     "ira": 1.605769,
+     "precision": 0.457792,
+     "tau_high": 0.9109597855,
+     "tau_keep": 0.11408511927247861,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.930435,
+     "coverage_any": 0.826087,
+     "far": 0.13913,
+     "gap": 0.0175688695,
+     "ira": 1.654206,
+     "precision": 0.448598,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.10451371828444975,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.930435,
+     "coverage_any": 0.834783,
+     "far": 0.130435,
+     "gap": 0.0175688695,
+     "ira": 1.675926,
+     "precision": 0.444785,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.10356958494992032,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.704348,
+     "far": 0.269565,
+     "gap": 1.0,
+     "ira": 1.465116,
+     "precision": 0.491935,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.1584791578852422,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.947826,
+     "coverage_any": 0.773913,
+     "far": 0.182609,
+     "gap": 0.05521343,
+     "ira": 1.61,
+     "precision": 0.459732,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.11408511927247861,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.947826,
+     "coverage_any": 0.773913,
+     "far": 0.191304,
+     "gap": 0.077833845,
+     "ira": 1.616162,
+     "precision": 0.461279,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.11408511927247861,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.956522,
+     "coverage_any": 0.773913,
+     "far": 0.2,
+     "gap": 0.0894189945,
+     "ira": 1.628866,
+     "precision": 0.464407,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.11408511927247861,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.930435,
+     "coverage_any": 0.834783,
+     "far": 0.121739,
+     "gap": 0.017044771,
+     "ira": 1.743119,
+     "precision": 0.434524,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.0964428713590825,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.956522,
+     "coverage_any": 0.782609,
+     "far": 0.2,
+     "gap": 0.0894189945,
+     "ira": 1.659794,
+     "precision": 0.461538,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.10976248692946135,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.947826,
+     "coverage_any": 0.791304,
+     "far": 0.191304,
+     "gap": 0.0894189945,
+     "ira": 1.686869,
+     "precision": 0.456026,
+     "tau_high": 0.23337649300000002,
+     "tau_keep": 0.10976248692946135,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.756522,
+     "far": 0.226087,
+     "gap": 0.1576208345,
+     "ira": 1.673913,
+     "precision": 0.465278,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.11408511927247861,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.930435,
+     "coverage_any": 0.843478,
+     "far": 0.113043,
+     "gap": 0.017044771,
+     "ira": 1.836364,
+     "precision": 0.426136,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.08993530636959604,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.965217,
+     "coverage_any": 0.765217,
+     "far": 0.217391,
+     "gap": 0.1020066685,
+     "ira": 1.691489,
+     "precision": 0.459184,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.10976248692946135,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.973913,
+     "coverage_any": 0.765217,
+     "far": 0.226087,
+     "gap": 0.1576208345,
+     "ira": 1.706522,
+     "precision": 0.462329,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.10976248692946135,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.921739,
+     "coverage_any": 0.843478,
+     "far": 0.104348,
+     "gap": 0.006974530499999999,
+     "ira": 1.875,
+     "precision": 0.416667,
+     "tau_high": 0.13768458249999999,
+     "tau_keep": 0.08792662397786694,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.634783,
+     "far": 0.347826,
+     "gap": 0.27144838400000004,
+     "ira": 1.526316,
+     "precision": 0.486726,
+     "tau_high": 0.41077731,
+     "tau_keep": 0.1584791578852422,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.713043,
+     "far": 0.269565,
+     "gap": 1.0,
+     "ira": 1.755814,
+     "precision": 0.458781,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.11408511927247861,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.721739,
+     "far": 0.269565,
+     "gap": 1.0,
+     "ira": 1.790698,
+     "precision": 0.45583,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.10976248692946135,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.982609,
+     "coverage_any": 0.713043,
+     "far": 0.286957,
+     "gap": 1.0,
+     "ira": 1.77381,
+     "precision": 0.460145,
+     "tau_high": 0.308926452,
+     "tau_keep": 0.10976248692946135,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.643478,
+     "far": 0.347826,
+     "gap": 0.27144838400000004,
+     "ira": 1.789474,
+     "precision": 0.456,
+     "tau_high": 0.41077731,
+     "tau_keep": 0.11408511927247861,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.991304,
+     "coverage_any": 0.652174,
+     "far": 0.347826,
+     "gap": 0.27144838400000004,
+     "ira": 1.815789,
+     "precision": 0.454545,
+     "tau_high": 0.41077731,
+     "tau_keep": 0.10976248692946135,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.956522,
+     "coverage_any": 0.791304,
+     "far": 0.2,
+     "gap": 0.0894189945,
+     "ira": 2.360825,
+     "precision": 0.390957,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.06547397724743585,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.947826,
+     "coverage_any": 0.8,
+     "far": 0.191304,
+     "gap": 0.0894189945,
+     "ira": 2.393939,
+     "precision": 0.38601,
+     "tau_high": 0.23337649300000002,
+     "tau_keep": 0.06547397724743585,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.965217,
+     "coverage_any": 0.773913,
+     "far": 0.217391,
+     "gap": 0.1020066685,
+     "ira": 2.393617,
+     "precision": 0.390244,
+     "tau_high": 0.23723556299999998,
+     "tau_keep": 0.06547397724743585,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.93913,
+     "coverage_any": 0.808696,
+     "far": 0.173913,
+     "gap": 0.05521343,
+     "ira": 3.22549,
+     "precision": 0.317427,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.04201597648053534,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    },
+    {
+     "abstention_recall": 0.93913,
+     "coverage_any": 0.817391,
+     "far": 0.173913,
+     "gap": 0.05521343,
+     "ira": 5.647059,
+     "precision": 0.214188,
+     "tau_high": 0.301350079,
+     "tau_keep": 0.011697103263680444,
+     "unmet": [
+      "delivered_precision",
+      "ira",
+      "coverage_any",
+      "far"
+     ]
+    }
+   ],
+   "ira": 2.582677,
+   "per_category": {
+    "knowledge-update": {
+     "abstention_recall": 0.818182,
+     "coverage_any": 1.0,
+     "f05": 0.376147,
+     "far": 0.0,
+     "ira": 3.269231,
+     "n_answerable": 22,
+     "n_negative": 22,
+     "pool_recall": 1.0,
+     "precision": 0.325397,
+     "rows_per_answer": 4.846154
+    },
+    "multi-session": {
+     "abstention_recall": 0.805556,
+     "coverage_any": 0.916667,
+     "f05": 0.389887,
+     "far": 0.027778,
+     "ira": 2.761905,
+     "n_answerable": 36,
+     "n_negative": 36,
+     "pool_recall": 1.0,
+     "precision": 0.340909,
+     "rows_per_answer": 4.190476
+    },
+    "single-session-user": {
+     "abstention_recall": 0.842105,
+     "coverage_any": 1.0,
+     "f05": 0.345455,
+     "far": 0.0,
+     "ira": 2.045455,
+     "n_answerable": 19,
+     "n_negative": 19,
+     "pool_recall": 1.0,
+     "precision": 0.296875,
+     "rows_per_answer": 2.909091
+    },
+    "temporal-reasoning": {
+     "abstention_recall": 0.921053,
+     "coverage_any": 0.842105,
+     "f05": 0.430334,
+     "far": 0.105263,
+     "ira": 2.216216,
+     "n_answerable": 38,
+     "n_negative": 38,
+     "pool_recall": 0.973684,
+     "precision": 0.383459,
+     "rows_per_answer": 3.594595
+    }
+   },
+   "precision": 0.342685,
+   "queries": 230,
+   "rule": "fallback_coverage_far",
+   "strictest": "highest tau_keep, then highest tau_high, then highest gap",
+   "targets": {
+    "abstention_recall": {
+     "best": 1.0,
+     "met": true,
+     "op": ">=",
+     "threshold": 0.85,
+     "value": 0.852174
+    },
+    "coverage_any": {
+     "best": 0.982609,
+     "met": true,
+     "op": ">=",
+     "threshold": 0.85,
+     "value": 0.921739
+    },
+    "delivered_precision": {
+     "best": 1.0,
+     "met": true,
+     "op": ">=",
+     "threshold": 0.7,
+     "value": 0.342685
+    },
+    "far": {
+     "best": 0.0,
+     "met": true,
+     "op": "<=",
+     "threshold": 0.05,
+     "value": 0.043478
+    },
+    "ira": {
+     "best": 0.0,
+     "met": true,
+     "op": "<=",
+     "threshold": 0.5,
+     "value": 2.582677
+    }
+   }
+  }
+ },
+ "metadata": {
+  "datasets": {
+   "lme": {
+    "name": "LongMemEval",
+    "sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+    "split": "tune",
+    "version": "cleaned"
+   },
+   "syn": {
+    "name": "SYN",
+    "seeds": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "version": 3
+   }
+  },
+  "fingerprint": "3f8c9c11ed6e26fed85e2c0f262ca27db519fff07ef89f15591120a222bdea6f",
+  "fit_date": "2026-10-29T15:11:42Z",
+  "licences": [
+   {
+    "copyright": "Copyright (c) 2024 Di Wu",
+    "name": "LongMemEval",
+    "source": "https://github.com/xiaowu0162/LongMemEval",
+    "spdx": "MIT"
+   }
+  ],
+  "mem_version": "0.0.1"
+ }
+}

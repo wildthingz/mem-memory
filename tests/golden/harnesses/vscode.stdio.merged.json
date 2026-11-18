@@ -1,0 +1,38 @@
+{
+  "theme": "dark",
+  "servers": {
+    "other": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "x"
+      ]
+    },
+    "mem-personal": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "/opt/mem",
+        "mem",
+        "serve",
+        "--store",
+        "personal=/data/personal.db"
+      ]
+    },
+    "mem-work": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "/opt/mem",
+        "mem",
+        "serve",
+        "--store",
+        "work=/data/work.db"
+      ]
+    }
+  }
+}

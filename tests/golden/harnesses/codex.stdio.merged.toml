@@ -1,0 +1,13 @@
+model = "gpt-5"
+
+[mcp_servers.other]
+command = "npx"
+args = ["-y", "x"]
+
+[mcp_servers.mem-personal]
+command = "uv"
+args = ["run", "--project", "/opt/mem", "mem", "serve", "--store", "personal=/data/personal.db"]
+
+[mcp_servers.mem-work]
+command = "uv"
+args = ["run", "--project", "/opt/mem", "mem", "serve", "--store", "work=/data/work.db"]

@@ -1,0 +1,11 @@
+# systemd user unit: one encrypted backup of both stores (P7). Started nightly by mem-backup.timer.
+# Install and restore drill: docs/backups.md. Safe while mem serve runs (VACUUM INTO).
+[Unit]
+Description=mem: encrypted nightly backup of the personal and work stores
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/code/mem
+Environment=PATH=%h/.local/bin:%h/.cargo/bin:/usr/local/bin:/usr/bin:/bin
+UMask=0077
+ExecStart=/usr/bin/env uv run --extra models mem backup --keep 14

@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "mem-personal": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "/opt/mem",
+        "mem",
+        "serve",
+        "--store",
+        "personal=/data/personal.db"
+      ]
+    },
+    "mem-work": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "/opt/mem",
+        "mem",
+        "serve",
+        "--store",
+        "work=/data/work.db"
+      ]
+    }
+  }
+}

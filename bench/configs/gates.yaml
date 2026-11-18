@@ -1,0 +1,181 @@
+# Phase gates (benchmarks-v2 §4): phase -> [{id, metric, op, threshold, split, frozen_at}].
+# Only thresholds written in benchmarks-v2 appear here. P1 gates are exact (0 violations / pass)
+# and run on hand-written fixtures, so there is no tune/test split and nothing to freeze.
+# `op: record` = no threshold, the run only has to complete and be recorded (B-C1, B-C2 in P1).
+# P2-P7 entries are added with their phases, each frozen per §5.4 before its first test look
+# (`bench freeze P2`; a row with `frozen_at: null` cannot be looked at on test).
+# `descriptive: true` (the owner, 2026-10-24, MEM2-128): the row is reported with value and threshold and
+# never fails `bench gate`. These are the LongMemEval precision-side numbers (B-R1 / B-R2 (i) delivered
+# precision, IRA, coverage_any, abstention recall, FAR, far_drift): LME's round-level labels count
+# on-topic neighbour chunks as wrong and pool recall caps coverage (benchmarks-v2 B-R1). Thresholds are
+# kept, not relaxed: the floors fit still reads them. The same numbers stay hard on PG-v1 (B-R3, P4).
+bench_version: 2
+phases:
+  P1:
+    - {id: B-S1, metric: failures, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-R6, metric: violations, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-W6, metric: violations, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-R5, metric: case_failures, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-C1, metric: n, op: "record", threshold: null, split: fixture, frozen_at: null}
+    - {id: B-C2, metric: n, op: "record", threshold: null, split: fixture, frozen_at: null}
+  # P2 (benchmarks-v2 §4 P2 row, B-R1/B-R2/B-C1/B-C2). Thresholds are the spec's provisional values,
+  # unfrozen. Metric names are those of bench/lme_eval.py and bench/suites/b_p2_cost.py.
+  # `ndcg_std_superior` = 1: paired-bootstrap CI lower bound of Δ nDCG@10 (std) vs the better single
+  # leg > 0 (report-only, value 1, when tune power < 0.80). `counter_exact` = 1: B-C2 tokens come from
+  # Anthropic count_tokens (an estimate does not gate, §0.4). `far_drift` = |FAR_test - FAR_tune|.
+  P2:
+    - {id: B-R1, metric: recall_any5_R, op: ">=", threshold: 0.93, split: test, frozen_at: null}
+    - {id: B-R1, metric: ndcg_std_superior, op: ">=", threshold: 1, split: test, frozen_at: null}
+    - {id: B-R1, metric: coverage_any, op: ">=", threshold: 0.85, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R1, metric: far, op: "<=", threshold: 0.05, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R1, metric: delivered_precision, op: ">=", threshold: 0.70, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R1, metric: ira, op: "<=", threshold: 0.5, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R2, metric: abstention_recall, op: ">=", threshold: 0.85, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R2, metric: far, op: "<=", threshold: 0.05, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R2, metric: far_drift, op: "<=", threshold: 0.03, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R5, metric: case_failures, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-R6, metric: violations, op: "==", threshold: 0, split: test, frozen_at: null}
+    # L50k (the owner, 2026-10-25, MEM2-133): B-C1 / B-C3 warm p95 at L50k (measured at pool 50; the default is pool 30 since MEM2-164), is recorded in the runbook
+    # (p2-pool.md §4), not gated, so it has no row here and `bench gate` cannot fail on it. If the median of
+    # the 3 runs' warm p95 is >= 1200 ms, L50k becomes a hard gate (<= 1500) and an ANN-index task opens.
+    - {id: B-C1, metric: warm_p95_ms_median, op: "<=", threshold: 1500, split: test, frozen_at: null}
+    - {id: B-C2, metric: tokens_mean, op: "<=", threshold: 250, split: test, frozen_at: null}
+    - {id: B-C2, metric: tokens_p95, op: "<=", threshold: 600, split: test, frozen_at: null}
+    - {id: B-C2, metric: empty_tokens_max, op: "<=", threshold: 30, split: test, frozen_at: null}
+    - {id: B-C2, metric: reduction_vs_top8_full, op: ">=", threshold: 0.80, split: test, frozen_at: null}
+    - {id: B-C2, metric: counter_exact, op: ">=", threshold: 1, split: test, frozen_at: null}
+
+  # P3 (benchmarks-v2 §4 P3 row). SYN gates: every held-out seed (101-105) must meet the threshold
+  # (the metric is the worst seed, §5.1). B-R1 and B-R2 (i) are the P2 thresholds again on the gate
+  # re-calibrated with SYN dev ("no regression"). `table_case_failures` / `case_failures` /
+  # `violations` = 0 are the exact T0 cases of the same ids; `run_complete` = 1 says the B-W5 run
+  # finished within its budget (a harness integrity row, like `counter_exact` in P2).
+  P3:
+    - {id: B-W1, metric: wrong_merge_rate, op: "<=", threshold: 0.005, split: test, frozen_at: null}
+    - {id: B-W1, metric: ask_back_recall, op: ">=", threshold: 0.90, split: test, frozen_at: null}
+    - {id: B-W1, metric: ask_rate, op: "<=", threshold: 0.10, split: test, frozen_at: null}
+    - {id: B-W1, metric: split_rate, op: "<=", threshold: 0.02, split: test, frozen_at: null}
+    - {id: B-W1, metric: final_link_accuracy, op: ">=", threshold: 0.98, split: test, frozen_at: null}
+    - {id: B-W1, metric: table_case_failures, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-W2, metric: exists_rate, op: ">=", threshold: 1, split: test, frozen_at: null}
+    - {id: B-W2, metric: paraphrase_surfacing, op: ">=", threshold: 0.90, split: test, frozen_at: null}
+    - {id: B-W2, metric: final_duplicate_rate, op: "<=", threshold: 0.03, split: test, frozen_at: null}
+    - {id: B-W2, metric: wrong_invalidation_compat, op: "==", threshold: 0, split: test, frozen_at: null}
+    - {id: B-W2, metric: case_failures, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-W3, metric: surfacing_recall, op: ">=", threshold: 0.95, split: test, frozen_at: null}
+    - {id: B-W3, metric: list_precision, op: ">=", threshold: 0.50, split: test, frozen_at: null}
+    - {id: B-W3, metric: chain_correctness, op: ">=", threshold: 0.95, split: test, frozen_at: null}
+    - {id: B-W3, metric: wrong_invalidation, op: "==", threshold: 0, split: test, frozen_at: null}
+    - {id: B-W3, metric: slot_accuracy, op: ">=", threshold: 0.95, split: test, frozen_at: null}
+    - {id: B-W3, metric: history, op: ">=", threshold: 1, split: test, frozen_at: null}
+    - {id: B-W3, metric: case_failures, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-W5, metric: capture, op: ">=", threshold: 0.80, split: test, frozen_at: null}
+    - {id: B-W5, metric: noise_rate, op: "<=", threshold: 0.20, split: test, frozen_at: null}
+    - {id: B-W5, metric: about_fill, op: ">=", threshold: 0.98, split: test, frozen_at: null}
+    - {id: B-W5, metric: conflict_action, op: ">=", threshold: 0.85, split: test, frozen_at: null}
+    - {id: B-W5, metric: wrong_invalidation, op: "<=", threshold: 0.02, split: test, frozen_at: null}
+    - {id: B-W5, metric: alignment_audit_wrong, op: "<=", threshold: 1, split: test, frozen_at: null}
+    - {id: B-W5, metric: run_complete, op: ">=", threshold: 1, split: test, frozen_at: null}
+    - {id: B-W6, metric: violations, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-R5, metric: case_failures, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    # known_miss (the owner, 2026-10-25): the three B-R5 SYN rows below miss on dev (current@1 0.856, as_of 0.935,
+    # leakage ~0.004; ranking ceiling, host pass 5). Thresholds kept; `bench gate P3` prints KNOWN MISS, no fail.
+    - {id: B-R5, metric: leakage, op: "==", threshold: 0, split: test, frozen_at: null, known_miss: true}
+    - {id: B-R5, metric: as_of_accuracy, op: ">=", threshold: 0.95, split: test, frozen_at: null, known_miss: true}
+    - {id: B-R5, metric: current_recall_at_1, op: ">=", threshold: 0.90, split: test, frozen_at: null, known_miss: true}
+    # known_miss (the owner, 2026-10-25, MEM2-183, ADR 0020): SYN 0.10 under the P2 serving gate (P3 read model off); LME B-E1 abstention 10/10.
+    - {id: B-R2, metric: missing_slot_abstention, op: ">=", threshold: 0.90, split: test, frozen_at: null, known_miss: true}
+    - {id: B-R2, metric: abstention_recall, op: ">=", threshold: 0.85, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R2, metric: far, op: "<=", threshold: 0.05, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R2, metric: far_drift, op: "<=", threshold: 0.03, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R1, metric: recall_any5_R, op: ">=", threshold: 0.93, split: test, frozen_at: null}
+    - {id: B-R1, metric: ndcg_std_superior, op: ">=", threshold: 1, split: test, frozen_at: null}
+    - {id: B-R1, metric: coverage_any, op: ">=", threshold: 0.85, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R1, metric: far, op: "<=", threshold: 0.05, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R1, metric: delivered_precision, op: ">=", threshold: 0.70, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R1, metric: ira, op: "<=", threshold: 0.5, split: test, frozen_at: null, descriptive: true}
+    - {id: B-C3, metric: warm_p95_ms_median, op: "<=", threshold: 1500, split: test, frozen_at: null}
+    # B-E1 (the owner, 2026-10-25, MEM2-1 comments 22:24 / 22:59, MEM2-184): end-to-end QA on LongMemEval, the `mem`
+    # arm of `bench e1-run` (answerer + judge Sonnet 5.5). >= 0.75 on tune is informational until the freeze; the test
+    # split is looked at once, at the freeze. `run_complete` = 1: the run finished inside its --budget-usd.
+    - {id: B-E1, metric: accuracy, op: ">=", threshold: 0.75, split: test, frozen_at: null}
+    - {id: B-E1, metric: run_complete, op: ">=", threshold: 1, split: test, frozen_at: null}
+
+  # P4 (benchmarks-v2 §4 P4 row). B-I rows are exact (0 diffs, all cases, all counts equal, 0/0/confined,
+  # B-I5 >= 0.98 overall and >= 0.95 per rel); `_fixture` and `_snapshot` metrics are the same check on
+  # the mini-vault and on the real snapshot, each its own row so a missing snapshot is "not produced"
+  # (FAIL), never a pass. B-C4 and B-C1/B-C3 @ V5k use the spec's numbers (B-C1/B-C3 provisional, 1,500 ms).
+  # B-R3: the six spec thresholds on the test split (n = 80) + `stale_gold` = 0 (a gold id without a chunk
+  # fails the run, B-R3 step 3). `record` rows are the qmd / DR-4 numbers "recorded": they must exist,
+  # they are not thresholds (DR-4 is a decision rule, not a gate). B-R1 / B-R2 (i) are the P2 thresholds
+  # again, on the gate re-calibrated with PG tune ("no regression").
+  P4:
+    - {id: B-I1, metric: diff_lines_fixture, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-I1, metric: diff_lines_snapshot, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-I2, metric: case_failures, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-I3, metric: mismatches_fixture, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-I3, metric: mismatches_snapshot, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-I4, metric: source_fidelity_failures, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-I4, metric: render_nondeterminism, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-I4, metric: render_unconfined_files, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-I5, metric: precision, op: ">=", threshold: 0.98, split: fixture, frozen_at: null}
+    - {id: B-I5, metric: rel_precision_min, op: ">=", threshold: 0.95, split: fixture, frozen_at: null}
+    - {id: B-I5, metric: unlabelled, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-I5, metric: sheet_matches_store, op: ">=", threshold: 1, split: fixture, frozen_at: null}
+    - {id: B-C4, metric: cold_s, op: "<=", threshold: 1200, split: test, frozen_at: null}
+    - {id: B-C4, metric: warm_s, op: "<=", threshold: 10, split: test, frozen_at: null}
+    - {id: B-C4, metric: warm_all_unchanged, op: ">=", threshold: 1, split: test, frozen_at: null}
+    - {id: B-R3, metric: stale_gold, op: "==", threshold: 0, split: test, frozen_at: null}
+    - {id: B-R3, metric: coverage_any, op: ">=", threshold: 0.85, split: test, frozen_at: null}
+    - {id: B-R3, metric: far, op: "<=", threshold: 0.10, split: test, frozen_at: null}
+    - {id: B-R3, metric: delivered_precision, op: ">=", threshold: 0.70, split: test, frozen_at: null}
+    - {id: B-R3, metric: ira, op: "<=", threshold: 0.5, split: test, frozen_at: null}
+    - {id: B-R3, metric: abstention_recall, op: ">=", threshold: 0.70, split: test, frozen_at: null}
+    - {id: B-R3, metric: ndcg_std10_R, op: ">=", threshold: 0.70, split: test, frozen_at: null}
+    - {id: B-R3, metric: delivered_f05, op: "record", threshold: null, split: test, frozen_at: null}
+    - {id: B-R3, metric: ndcg_std10_path_qmd, op: "record", threshold: null, split: test, frozen_at: null}
+    - {id: B-R3, metric: ndcg_std10_path_R, op: "record", threshold: null, split: test, frozen_at: null}
+    - {id: B-R3, metric: dr4_reopen, op: "record", threshold: null, split: test, frozen_at: null}
+    - {id: B-C1, metric: warm_p95_ms_median, op: "<=", threshold: 1500, split: test, frozen_at: null}
+    - {id: B-C3, metric: warm_p95_ms_median, op: "<=", threshold: 1500, split: test, frozen_at: null}
+    - {id: B-R1, metric: recall_any5_R, op: ">=", threshold: 0.93, split: test, frozen_at: null}
+    - {id: B-R1, metric: ndcg_std_superior, op: ">=", threshold: 1, split: test, frozen_at: null}
+    - {id: B-R1, metric: coverage_any, op: ">=", threshold: 0.85, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R1, metric: far, op: "<=", threshold: 0.05, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R1, metric: delivered_precision, op: ">=", threshold: 0.70, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R1, metric: ira, op: "<=", threshold: 0.5, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R2, metric: abstention_recall, op: ">=", threshold: 0.85, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R2, metric: far, op: "<=", threshold: 0.05, split: test, frozen_at: null, descriptive: true}
+    - {id: B-R2, metric: far_drift, op: "<=", threshold: 0.03, split: test, frozen_at: null, descriptive: true}
+
+  # P5 (benchmarks-v2 §2 B-E5, §4 P5 row). Human-run legs, recorded: split fixture (no test look).
+  # B-E5: parity 1e-6 on ranked ids and p across machines and transports (mismatch counts are exact,
+  # `parity_max_p_diff` is the 1e-6); 0 cross-store ids; added p95 round trip over local <= 300 ms;
+  # reconnect after a server restart within 1 retry; B-S1 over the Tailscale address (smoke_failures).
+  # B-C6: <= 2,500 tokens by count_tokens, or R5 applied (`overhead_ok`); the token count is recorded.
+  P5:
+    - {id: B-E5, metric: parity_id_mismatches, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-E5, metric: parity_max_p_diff, op: "<=", threshold: 0.000001, split: fixture, frozen_at: null}
+    - {id: B-E5, metric: cross_store_ids, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-E5, metric: added_p95_ms, op: "<=", threshold: 300, split: fixture, frozen_at: null}
+    - {id: B-E5, metric: reconnect_failures, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-E5, metric: smoke_failures, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-C6, metric: overhead_ok, op: ">=", threshold: 1, split: fixture, frozen_at: null}
+    - {id: B-C6, metric: session_tokens, op: record, threshold: null, split: fixture, frozen_at: null}
+
+  # P6 (benchmarks-v2 §2 B-E4, §4 P6 row). Evaluated by `bench e4-report` over the window of the last
+  # 10 working days (no tune/test split, no test look). `blocking_incidents` = data-loss + wrong-store.
+  # `work_p95_ms` = p95(server latency of work-host recalls) + the B-E5 `added_p95_ms` of the work
+  # machine: an approximation of the in-situ client round trip (the events log holds server time only).
+  # B-R3 on PG-v2 is recorded (a gate only from the next version): `bench pgv2-run`.
+  P6:
+    - {id: B-E4, metric: working_days, op: ">=", threshold: 10, split: fixture, frozen_at: null}
+    - {id: B-E4, metric: work_days, op: ">=", threshold: 3, split: fixture, frozen_at: null}
+    - {id: B-E4, metric: recalls_per_day_median, op: ">=", threshold: 3, split: fixture, frozen_at: null}
+    - {id: B-E4, metric: useful_hit, op: ">=", threshold: 0.70, split: fixture, frozen_at: null}
+    - {id: B-E4, metric: miss, op: "<=", threshold: 0.10, split: fixture, frozen_at: null}
+    - {id: B-E4, metric: unresolved_conflicts, op: "<=", threshold: 0.10, split: fixture, frozen_at: null}
+    - {id: B-E4, metric: duplicates_per_100, op: "<=", threshold: 5, split: fixture, frozen_at: null}
+    - {id: B-E4, metric: blocking_incidents, op: "==", threshold: 0, split: fixture, frozen_at: null}
+    - {id: B-E4, metric: work_p95_ms, op: "<=", threshold: 2000, split: fixture, frozen_at: null}
+    - {id: B-R3-PGv2, metric: n_answerable, op: record, threshold: null, split: fixture, frozen_at: null}

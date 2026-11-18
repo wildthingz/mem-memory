@@ -1,0 +1,10 @@
+node_modules/
+__pycache__/
+.venv/
+*.db
+*.db-*
+.cache/
+bench/results/
+data/
+bench/gold/personal/v2/
+.tmp/

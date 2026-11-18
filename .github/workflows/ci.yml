@@ -1,0 +1,52 @@
+# Lint and the unit tests on a plain CPU runner: stub models (hash embedder), no GPU, no network
+# for the tests, no `--extra models` (no torch).
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      HF_HUB_OFFLINE: "1"
+      UV_PYTHON: "3.12"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - name: Install (no models extra)
+        run: uv sync --locked
+      - name: Lint
+        run: |
+          uv run ruff check src tests bench
+          uv run ruff format --check src tests bench
+      - name: Tests
+        run: uv run --offline pytest -q
+
+  # A clean Ubuntu LTS runner, a wheel built from `git archive HEAD` installed into a new venv: `mem setup --yes`,
+  # `mem doctor`, the self-test and `--uninstall --purge` on a temp HOME (no GPU, systemd user
+  # session or Claude Code here, so tests/e2e/fresh_install.py puts fakes for those on PATH; the
+  # models are placeholders and the network is blocked). The gate is not faked: the job fails while the
+  # package ships no gate for its default config, since such an install cannot serve.
+  fresh-install:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      UV_PYTHON: "3.12"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - name: Fresh install, doctor, self-test, uninstall
+        run: scripts/fresh-install-test.sh
