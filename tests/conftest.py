@@ -1,4 +1,9 @@
 import os
+
+# Typer forces a rich terminal under GITHUB_ACTIONS / FORCE_COLOR / PY_COLORS, and its ANSI codes
+# split option names in CLI error text. Read at Typer's import, so it is set before anything loads it.
+os.environ["_TYPER_FORCE_DISABLE_TERMINAL"] = "1"
+
 import shutil
 import socket
 import tempfile
